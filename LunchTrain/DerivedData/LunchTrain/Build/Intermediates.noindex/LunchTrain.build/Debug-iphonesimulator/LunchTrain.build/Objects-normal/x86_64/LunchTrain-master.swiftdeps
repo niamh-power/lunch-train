@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "90bec377400dbb40c4ad9ed00870b150"
+build_time: [1521648026, 965798000]
+inputs:
+  "/Users/niamhpower/work/lunch-train/LunchTrain/LunchTrain/ViewController.swift": [1521648017, 0]
+  "/Users/niamhpower/work/lunch-train/LunchTrain/LunchTrain/AppDelegate.swift": [1521647859, 0]

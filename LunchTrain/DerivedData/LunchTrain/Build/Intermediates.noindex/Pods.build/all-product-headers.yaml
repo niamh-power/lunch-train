@@ -1,0 +1,246 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/GTMOAuth2/GTMOAuth2.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMOAuth2-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/GTMOAuth2/GTMOAuth2.framework/Headers/GTMOAuth2-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMOAuth2-umbrella.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Target Support Files/GTMOAuth2/GTMOAuth2-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMOAuth2Authentication.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GTMOAuth2/Source/GTMOAuth2Authentication.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMOAuth2SignIn.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GTMOAuth2/Source/GTMOAuth2SignIn.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMOAuth2ViewControllerTouch.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GTMOAuth2/Source/Touch/GTMOAuth2ViewControllerTouch.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/GTMOAuth2/GTMOAuth2.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GTMOAuth2.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMGatherInputStream.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GTMSessionFetcher/Source/GTMGatherInputStream.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMMIMEDocument.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GTMSessionFetcher/Source/GTMMIMEDocument.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMReadMonitorInputStream.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GTMSessionFetcher/Source/GTMReadMonitorInputStream.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher-umbrella.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcherLogging.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcherService.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionUploadFetcher.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMDebugSelectorValidation.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GoogleToolboxForMac/DebugUtils/GTMDebugSelectorValidation.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMDebugThreadValidation.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GoogleToolboxForMac/DebugUtils/GTMDebugThreadValidation.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMDefines.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GoogleToolboxForMac/GTMDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMMethodCheck.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GoogleToolboxForMac/DebugUtils/GTMMethodCheck.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSData+zlib.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GoogleToolboxForMac/Foundation/GTMNSData+zlib.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSDictionary+URLArguments.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GoogleToolboxForMac/Foundation/GTMNSDictionary+URLArguments.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSString+URLArguments.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/GoogleToolboxForMac/Foundation/GTMNSString+URLArguments.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-umbrella.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GoogleToolboxForMac.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/Pods_LunchTrain.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-LunchTrain-umbrella.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Target Support Files/Pods-LunchTrain/Pods-LunchTrain-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_LunchTrain-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/Pods_LunchTrain.framework/Headers/Pods_LunchTrain-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/Pods_LunchTrain.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Pods-LunchTrain.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "nanopb-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "nanopb-umbrella.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Target Support Files/nanopb/nanopb-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/nanopb/pb.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_common.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/nanopb/pb_common.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_decode.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/nanopb/pb_decode.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_encode.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/nanopb/pb_encode.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/nanopb/nanopb.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/nanopb.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
