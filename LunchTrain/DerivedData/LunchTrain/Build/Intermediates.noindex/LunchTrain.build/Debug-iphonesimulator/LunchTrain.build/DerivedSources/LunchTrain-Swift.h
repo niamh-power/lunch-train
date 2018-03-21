@@ -211,7 +211,23 @@ SWIFT_CLASS("_TtC10LunchTrain26TrainCreatorViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+@class UIView;
 @class UITableView;
+@class UILabel;
+
+SWIFT_CLASS("_TtC10LunchTrain25TrainDetailViewController")
+@interface TrainDetailViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified trainIcon;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified joinTrainButtonView;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified passengersTableView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified organiserLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UITableViewCell;
 
 SWIFT_CLASS("_TtC10LunchTrain23TrainListViewController")
@@ -228,8 +244,6 @@ SWIFT_CLASS("_TtC10LunchTrain23TrainListViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
-@class UIImageView;
 
 SWIFT_CLASS("_TtC10LunchTrain18TrainTableViewCell")
 @interface TrainTableViewCell : UITableViewCell

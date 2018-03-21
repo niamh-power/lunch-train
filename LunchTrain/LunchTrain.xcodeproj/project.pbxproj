@@ -18,6 +18,7 @@
 		71065BD92062BD02008FFF55 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71065BD82062BD02008FFF55 /* NetworkService.swift */; };
 		71065BDB2062BE3C008FFF55 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71065BDA2062BE3C008FFF55 /* Train.swift */; };
 		71065BDF2062C177008FFF55 /* TrainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71065BDE2062C177008FFF55 /* TrainListViewController.swift */; };
+		7157297A2062D88A008354DC /* TrainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715729792062D88A008354DC /* TrainDetailViewController.swift */; };
 		7DEC7B725B0000916B18AEDF /* Pods_LunchTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A28F6FA3E04E8A1DB42762 /* Pods_LunchTrain.framework */; };
 		9092A2C7BB89F33679DEC705 /* Pods_LunchTrainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CA036A064572006CF1EB89 /* Pods_LunchTrainTests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		71065BD82062BD02008FFF55 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		71065BDA2062BE3C008FFF55 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
 		71065BDE2062C177008FFF55 /* TrainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListViewController.swift; sourceTree = "<group>"; };
+		715729792062D88A008354DC /* TrainDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainDetailViewController.swift; sourceTree = "<group>"; };
 		90CA036A064572006CF1EB89 /* Pods_LunchTrainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchTrainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B600682AAF307F669CE71A48 /* Pods-LunchTrainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTrainTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTrainTests/Pods-LunchTrainTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 		71065BD52062BB36008FFF55 /* TrainList */ = {
 			isa = PBXGroup;
 			children = (
+				715729792062D88A008354DC /* TrainDetailViewController.swift */,
 				71065BDE2062C177008FFF55 /* TrainListViewController.swift */,
 			);
 			path = TrainList;
@@ -396,6 +399,7 @@
 				71065BD72062BCDD008FFF55 /* TrainCreatorViewController.swift in Sources */,
 				71065BD92062BD02008FFF55 /* NetworkService.swift in Sources */,
 				71065BDB2062BE3C008FFF55 /* Train.swift in Sources */,
+				7157297A2062D88A008354DC /* TrainDetailViewController.swift in Sources */,
 				710283452062B63D000EF70E /* AppDelegate.swift in Sources */,
 				71065BDF2062C177008FFF55 /* TrainListViewController.swift in Sources */,
 			);

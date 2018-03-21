@@ -40,7 +40,6 @@ depends-member:
 - !private ["10LunchTrain20DocumentSerializableP", "passengers"]
 - !private ["10LunchTrain20DocumentSerializableP", "place"]
 - !private ["10LunchTrain20DocumentSerializableP", "time"]
-- !private ["10LunchTrain20DocumentSerializableP", "title"]
 - ["10LunchTrain20DocumentSerializableP", ""]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "subscript"]
@@ -79,7 +78,6 @@ depends-member:
 - ["10LunchTrain0B0V", "passengers"]
 - ["10LunchTrain0B0V", "place"]
 - ["10LunchTrain0B0V", "time"]
-- ["10LunchTrain0B0V", "title"]
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -247,4 +245,4 @@ depends-external:
 - "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Modules/module.modulemap"
-interface-hash: "91bf1db7eb5b53d363409f3d37748ab2"
+interface-hash: "d70a2630464ebe0059d6b32cbdbb9e6e"

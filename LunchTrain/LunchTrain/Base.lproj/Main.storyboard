@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3GJ-5c-fqE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -30,7 +30,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRh-bJ-Ukm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1119" y="98"/>
+            <point key="canvasLocation" x="-466" y="70"/>
         </scene>
         <!--showList-->
         <scene sceneID="tne-QT-ifu">
@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-36" y="81"/>
+            <point key="canvasLocation" x="286" y="70"/>
         </scene>
         <!--Train List View Controller-->
         <scene sceneID="zAo-w2-8Xq">
@@ -126,43 +126,44 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="UP5-zY-YWr" id="DOY-vu-91i"/>
+                        <segue destination="aeT-5V-FGY" kind="show" identifier="showDetail" id="X89-Zu-q9U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usy-la-hd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061.5999999999999" y="81.409295352323838"/>
+            <point key="canvasLocation" x="1054" y="70"/>
         </scene>
         <!--Train Detail View Controller-->
         <scene sceneID="LYD-QO-miB">
             <objects>
-                <viewController id="aeT-5V-FGY" customClass="TrainDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TrainDetailViewController" id="aeT-5V-FGY" customClass="TrainDetailViewController" customModule="LunchTrain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X32-2V-2rs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger" translatesAutoresizingMaskIntoConstraints="NO" id="m9u-ci-Bko">
-                                <rect key="frame" x="25" y="54" width="43" height="43"/>
+                                <rect key="frame" x="25" y="98" width="43" height="43"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwL-cr-dBf">
-                                <rect key="frame" x="93" y="56.5" width="150" height="39"/>
+                                <rect key="frame" x="93" y="100.5" width="150" height="39"/>
                                 <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organiser: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lk2-vx-HjC">
-                                <rect key="frame" x="93" y="103" width="89" height="22.5"/>
+                                <rect key="frame" x="93" y="147" width="89" height="22.5"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9r-Ca-Jkz">
-                                <rect key="frame" x="25" y="150.5" width="92" height="22.5"/>
+                                <rect key="frame" x="25" y="194.5" width="92" height="22.5"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A90-ja-ZI4">
-                                <rect key="frame" x="25" y="183" width="325" height="380"/>
+                                <rect key="frame" x="25" y="227" width="325" height="336"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqg-3g-6yV">
@@ -207,13 +208,16 @@
                         <viewLayoutGuide key="safeArea" id="J7J-iO-s5K"/>
                     </view>
                     <connections>
-                        <outlet property="organiserLabel" destination="lk2-vx-HjC" id="QIB-Nv-YoU"/>
-                        <outlet property="trainTitleLabel" destination="HwL-cr-dBf" id="y3h-QA-QsC"/>
+                        <outlet property="joinTrainButtonView" destination="kqg-3g-6yV" id="35O-DN-RQp"/>
+                        <outlet property="organiserLabel" destination="lk2-vx-HjC" id="YLk-lX-Jrn"/>
+                        <outlet property="passengersTableView" destination="A90-ja-ZI4" id="UuJ-7l-d2i"/>
+                        <outlet property="titleLabel" destination="HwL-cr-dBf" id="yo5-rA-6Se"/>
+                        <outlet property="trainIcon" destination="m9u-ci-Bko" id="pdU-CY-qto"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNd-T1-0IS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1912.8" y="80.50974512743629"/>
+            <point key="canvasLocation" x="1844" y="70"/>
         </scene>
     </scenes>
     <resources>

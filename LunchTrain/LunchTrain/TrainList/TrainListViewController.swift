@@ -16,6 +16,7 @@ class TrainListViewController: UIViewController, UITableViewDataSource, UITableV
 
     private var trains: [Train] = []
     private var documents: [DocumentSnapshot] = []
+    private var selectedTrain: Train?
 
     fileprivate var query: Query? {
         didSet {
@@ -119,12 +120,13 @@ class TrainListViewController: UIViewController, UITableViewDataSource, UITableV
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-//        let controller = RestaurantDetailViewController.fromStoryboard()
-//        controller.titleImageURL = restaurants[indexPath.row].photo
-//        controller.restaurant = restaurants[indexPath.row]
-//        controller.restaurantReference = documents[indexPath.row].reference
-//        self.navigationController?.pushViewController(controller, animated: true)
+        self.selectedTrain = trains[indexPath.row]
+
+        let vc = TrainDetailViewController.fromStoryboard()
+        vc.train = selectedTrain
+        navigationController?.pushViewController(vc, animated: true)
     }
+
 }
 
 class TrainTableViewCell: UITableViewCell {
@@ -136,6 +138,5 @@ class TrainTableViewCell: UITableViewCell {
 
     func populate(train: Train) {
         organiserLabel.text = train.owner
-        trainTitleLabel.text = train.title
     }
 }

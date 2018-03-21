@@ -22,23 +22,31 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		D3vFN2x3dduWt41oTBNamfjnYqY=
+		iQOSLZalajlag118tP6iB3iQZgU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		iqa5/bQxdyAHV/ZGxQGtQ1TmCxg=
+		v1mLoSspavwFCMnq0GtOFLcI1D4=
 		</data>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
+		<key>Base.lproj/Main.storyboardc/TrainDetailViewController.nib</key>
 		<data>
-		SiTPNBNpYUKUj9UyYMaTn24XiM4=
+		Ql9qNcWrCTpghqfRki5JmTLlF78=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UINavigationController-3GJ-5c-fqE.nib</key>
+		<data>
+		sjC+0cIUvGcRUJ83Y9EZCSkIsVs=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-mFO-VD-VZg.nib</key>
 		<data>
-		Xvp9Ulqb0PNlQw41y1RxIW5pzyE=
+		8YKmfz+yW2fTykrlQ/V9yEVibk4=
+		</data>
+		<key>Base.lproj/Main.storyboardc/aeT-5V-FGY-view-X32-2V-2rs.nib</key>
+		<data>
+		jrjfaGJ9dTKGHii/99WDrM8hQMo=
 		</data>
 		<key>Base.lproj/Main.storyboardc/mFO-VD-VZg-view-RBH-FM-YTr.nib</key>
 		<data>
-		wCCMM0mSO7PFjgb0K7XPLdA2uBE=
+		ug4VeBRmMwBVyIN0nxSJFBICi9M=
 		</data>
 		<key>FirebaseAuthUI.bundle/FUIAccountSettingsViewController.nib</key>
 		<data>
@@ -2331,55 +2339,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D3vFN2x3dduWt41oTBNamfjnYqY=
+			iQOSLZalajlag118tP6iB3iQZgU=
 			</data>
 			<key>hash2</key>
 			<data>
-			NVVTVlGk2JAjETu23dG2PVGsyYNibrcEhcI3tJab3Tk=
+			nuyVeZycC3Ulmgk7ZjJYgKy4gUcwQw0688qRR2wNuY8=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iqa5/bQxdyAHV/ZGxQGtQ1TmCxg=
+			v1mLoSspavwFCMnq0GtOFLcI1D4=
 			</data>
 			<key>hash2</key>
 			<data>
-			FjfTT6/ibyn6AIjxEi/LpS17IH3lOo6lb7pDH5kf8xg=
+			Jb+GwE+Z5KkVbKMOeREQrH2+XCM07FqT06MT45oEr3o=
 			</data>
 		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
+		<key>Base.lproj/Main.storyboardc/TrainDetailViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SiTPNBNpYUKUj9UyYMaTn24XiM4=
+			Ql9qNcWrCTpghqfRki5JmTLlF78=
 			</data>
 			<key>hash2</key>
 			<data>
-			9sfWXRRUdawern/SLJ1owjVh5E6FIhr7nsjHgzfuAI4=
+			p8PkQ/VhCpKbfCZ4voDHmlIa4lyPvchMNZRwvJglLws=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UINavigationController-3GJ-5c-fqE.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sjC+0cIUvGcRUJ83Y9EZCSkIsVs=
+			</data>
+			<key>hash2</key>
+			<data>
+			0oeYqWDxCAkRUJ/VHVmI5Ig5tV8VL5xWmdQ8RVTknjg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-mFO-VD-VZg.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Xvp9Ulqb0PNlQw41y1RxIW5pzyE=
+			8YKmfz+yW2fTykrlQ/V9yEVibk4=
 			</data>
 			<key>hash2</key>
 			<data>
-			qBothTZQwV7FqvBFWwuKicC6QEAw4ug7MJ3tP8n4NjQ=
+			dGKv4V2xgodId6/upExPK72nSNY5Yf9+wVDy02euZO4=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/aeT-5V-FGY-view-X32-2V-2rs.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jrjfaGJ9dTKGHii/99WDrM8hQMo=
+			</data>
+			<key>hash2</key>
+			<data>
+			lgKVoy8AqcyqYd+4nCb8/iWmdJi9QV3CY8qabe5nKcw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/mFO-VD-VZg-view-RBH-FM-YTr.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wCCMM0mSO7PFjgb0K7XPLdA2uBE=
+			ug4VeBRmMwBVyIN0nxSJFBICi9M=
 			</data>
 			<key>hash2</key>
 			<data>
-			av3FcW3sKK5tf7HTHbKAyl/X/8gz2R13gDsqiYj9esk=
+			m3bHWfo9hWXD/g6/gbZU6ST7xlN4A+KGMfQHZxd8z+s=
 			</data>
 		</dict>
 		<key>FirebaseAuthUI.bundle/FUIAccountSettingsViewController.nib</key>
