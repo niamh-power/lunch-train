@@ -1,6 +1,0 @@
-framework module Pods_LunchTrainTests {
-  umbrella header "Pods-LunchTrainTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
