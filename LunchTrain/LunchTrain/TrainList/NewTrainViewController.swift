@@ -13,6 +13,7 @@ import FirebaseAuth
 
 class NewTrainViewController: UIViewController {
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var createTrainButton: UIView!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var placeField: UITextField!
@@ -25,6 +26,7 @@ class NewTrainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator.isHidden = true
 
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.addPressed))
         createTrainButton.addGestureRecognizer(gesture)
@@ -32,6 +34,11 @@ class NewTrainViewController: UIViewController {
     }
 
     @objc func addPressed() {
+        createTrainButton.isHidden = true
+        activityIndicator.tintColor = .black
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+
         let user = Auth.auth().currentUser
 
         guard let place = placeField.text, let title = titleField.text else { return }
@@ -50,8 +57,9 @@ class NewTrainViewController: UIViewController {
             if let error = error {
                 print(error)
             }
-
-            self.navigationController?.dismiss(animated: true, completion: nil)
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.isHidden = true
+            self.dismiss(animated: true, completion: nil)
         }
     }
 }

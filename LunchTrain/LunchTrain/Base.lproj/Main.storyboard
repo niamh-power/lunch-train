@@ -269,26 +269,32 @@
                                         <color key="textColor" red="0.99482670200000001" green="1" blue="0.99780765339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0DI-VZ-WhF">
+                                        <rect key="frame" x="169" y="0.0" width="37" height="54"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1764705926" green="0.49803921579999999" blue="0.75686275960000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0DI-VZ-WhF" secondAttribute="bottom" id="GHG-8e-ZR4"/>
+                                    <constraint firstItem="0DI-VZ-WhF" firstAttribute="centerX" secondItem="eQZ-gF-YYD" secondAttribute="centerX" id="O0T-1i-jXL"/>
                                     <constraint firstAttribute="bottom" secondItem="vtw-RQ-Wt2" secondAttribute="bottom" id="Uoa-h6-17D"/>
                                     <constraint firstItem="vtw-RQ-Wt2" firstAttribute="leading" secondItem="eQZ-gF-YYD" secondAttribute="leading" id="YaD-Cc-51I"/>
                                     <constraint firstAttribute="height" constant="54" id="hIQ-2k-1hm"/>
                                     <constraint firstItem="vtw-RQ-Wt2" firstAttribute="top" secondItem="eQZ-gF-YYD" secondAttribute="top" id="jNy-RK-B69"/>
                                     <constraint firstAttribute="trailing" secondItem="vtw-RQ-Wt2" secondAttribute="trailing" id="kFU-Vm-PfJ"/>
+                                    <constraint firstItem="0DI-VZ-WhF" firstAttribute="centerY" secondItem="eQZ-gF-YYD" secondAttribute="centerY" id="xfW-Gz-cq1"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Train Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5R-00-Yia">
                                 <rect key="frame" x="25" y="45" width="325" height="30"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NIl-lo-Uto">
                                 <rect key="frame" x="25" y="100" width="325" height="30"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eq3-t2-LNq">
@@ -316,6 +322,7 @@
                         <viewLayoutGuide key="safeArea" id="eBe-R6-8e9"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="0DI-VZ-WhF" id="BFr-f8-K9O"/>
                         <outlet property="createTrainButton" destination="eQZ-gF-YYD" id="RPt-8X-5Fh"/>
                         <outlet property="datePicker" destination="eq3-t2-LNq" id="5Lb-2w-o59"/>
                         <outlet property="placeField" destination="NIl-lo-Uto" id="QV1-DE-Kxo"/>

@@ -77,7 +77,7 @@ class TrainListViewController: UIViewController, UITableViewDataSource, UITableV
 
     @objc func addPressed(sender:UITapGestureRecognizer){
         let controller = NewTrainViewController.fromStoryboard()
-        self.navigationController?.pushViewController(controller, animated: true)
+        self.navigationController?.present(controller, animated: true, completion: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
