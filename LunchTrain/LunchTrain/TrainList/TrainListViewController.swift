@@ -17,7 +17,8 @@ class TrainListViewController: UIViewController, UITableViewDataSource, UITableV
     private var trains: [Train] = []
     private var documents: [DocumentSnapshot] = []
     private var selectedTrain: Train?
-
+    @IBOutlet weak var createTrainButton: UIView!
+    
     fileprivate var query: Query? {
         didSet {
             if let listener = listener {
@@ -69,6 +70,14 @@ class TrainListViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.delegate = self
         tableView.estimatedRowHeight = 200
         query = baseQuery()
+
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.addPressed))
+        createTrainButton.addGestureRecognizer(gesture)
+    }
+
+    @objc func addPressed(sender:UITapGestureRecognizer){
+        let controller = NewTrainViewController.fromStoryboard()
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 
     override func viewWillAppear(_ animated: Bool) {

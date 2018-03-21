@@ -202,8 +202,24 @@ SWIFT_CLASS("_TtC10LunchTrain11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIView;
+@class UIDatePicker;
+@class UITextField;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC10LunchTrain22NewTrainViewController")
+@interface NewTrainViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified createTrainButton;
+@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified datePicker;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified placeField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified titleField;
+- (void)viewDidLoad;
+- (void)addPressed;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10LunchTrain26TrainCreatorViewController")
 @interface TrainCreatorViewController : UIViewController
@@ -212,7 +228,6 @@ SWIFT_CLASS("_TtC10LunchTrain26TrainCreatorViewController")
 @end
 
 @class UIImageView;
-@class UIView;
 @class UITableView;
 @class UILabel;
 @class UITapGestureRecognizer;
@@ -238,7 +253,9 @@ SWIFT_CLASS("_TtC10LunchTrain25TrainDetailViewController")
 SWIFT_CLASS("_TtC10LunchTrain23TrainListViewController")
 @interface TrainListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified createTrainButton;
 - (void)viewDidLoad;
+- (void)addPressedWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;

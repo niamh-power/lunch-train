@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UP5-zY-YWr">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="549"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="151" id="cft-X5-g29" customClass="TrainTableViewCell" customModule="LunchTrain" customModuleProvider="target">
@@ -114,17 +114,40 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ua-Zb-FbM">
+                                <rect key="frame" x="0.0" y="613" width="375" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Train" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xe-cl-zZj">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                        <color key="textColor" red="0.99482670200000001" green="1" blue="0.99780765339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1764705926" green="0.49803921579999999" blue="0.75686275960000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1xe-cl-zZj" firstAttribute="leading" secondItem="4ua-Zb-FbM" secondAttribute="leading" id="V66-vz-x4t"/>
+                                    <constraint firstAttribute="bottom" secondItem="1xe-cl-zZj" secondAttribute="bottom" id="hyT-ww-I6A"/>
+                                    <constraint firstAttribute="height" constant="54" id="iXa-re-k3p"/>
+                                    <constraint firstAttribute="trailing" secondItem="1xe-cl-zZj" secondAttribute="trailing" id="s8R-Oz-jb4"/>
+                                    <constraint firstItem="1xe-cl-zZj" firstAttribute="top" secondItem="4ua-Zb-FbM" secondAttribute="top" id="svN-ga-16Q"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="jTE-LW-yUG" firstAttribute="trailing" secondItem="UP5-zY-YWr" secondAttribute="trailing" id="4Ko-6T-91B"/>
+                            <constraint firstItem="jTE-LW-yUG" firstAttribute="bottom" secondItem="4ua-Zb-FbM" secondAttribute="bottom" id="4k2-gs-XhT"/>
+                            <constraint firstItem="jTE-LW-yUG" firstAttribute="trailing" secondItem="4ua-Zb-FbM" secondAttribute="trailing" id="E3N-zy-b9k"/>
+                            <constraint firstItem="4ua-Zb-FbM" firstAttribute="leading" secondItem="jTE-LW-yUG" secondAttribute="leading" id="LsT-bT-uV7"/>
                             <constraint firstItem="UP5-zY-YWr" firstAttribute="leading" secondItem="jTE-LW-yUG" secondAttribute="leading" id="Pua-10-D56"/>
                             <constraint firstItem="UP5-zY-YWr" firstAttribute="top" secondItem="jTE-LW-yUG" secondAttribute="top" id="fhY-tx-UMB"/>
-                            <constraint firstItem="jTE-LW-yUG" firstAttribute="bottom" secondItem="UP5-zY-YWr" secondAttribute="bottom" id="usF-Q6-c4b"/>
+                            <constraint firstItem="4ua-Zb-FbM" firstAttribute="top" secondItem="UP5-zY-YWr" secondAttribute="bottom" id="h4Z-by-VjI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jTE-LW-yUG"/>
                     </view>
                     <connections>
+                        <outlet property="createTrainButton" destination="4ua-Zb-FbM" id="PLY-VP-bR0"/>
                         <outlet property="tableView" destination="UP5-zY-YWr" id="DOY-vu-91i"/>
                         <segue destination="aeT-5V-FGY" kind="show" identifier="showDetail" id="X89-Zu-q9U"/>
                     </connections>
@@ -163,7 +186,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A90-ja-ZI4">
-                                <rect key="frame" x="25" y="227" width="325" height="336"/>
+                                <rect key="frame" x="25" y="227" width="325" height="386"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Xdm-v1-hBi">
@@ -177,10 +200,10 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqg-3g-6yV">
-                                <rect key="frame" x="25" y="588" width="325" height="54"/>
+                                <rect key="frame" x="0.0" y="613" width="375" height="54"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Train" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlO-9y-NtX">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                         <color key="textColor" red="0.99482670200000001" green="1" blue="0.99780765339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -200,11 +223,11 @@
                         <constraints>
                             <constraint firstItem="lk2-vx-HjC" firstAttribute="top" secondItem="HwL-cr-dBf" secondAttribute="bottom" constant="7.5" id="0RC-F9-1aF"/>
                             <constraint firstItem="A90-ja-ZI4" firstAttribute="leading" secondItem="J7J-iO-s5K" secondAttribute="leading" constant="25" id="5tq-GF-ezP"/>
-                            <constraint firstItem="kqg-3g-6yV" firstAttribute="top" secondItem="A90-ja-ZI4" secondAttribute="bottom" constant="25" id="ERR-pe-Mqp"/>
-                            <constraint firstItem="kqg-3g-6yV" firstAttribute="leading" secondItem="J7J-iO-s5K" secondAttribute="leading" constant="25" id="EZE-Sh-GTT"/>
+                            <constraint firstItem="kqg-3g-6yV" firstAttribute="top" secondItem="A90-ja-ZI4" secondAttribute="bottom" id="ERR-pe-Mqp"/>
+                            <constraint firstItem="kqg-3g-6yV" firstAttribute="leading" secondItem="J7J-iO-s5K" secondAttribute="leading" id="EZE-Sh-GTT"/>
                             <constraint firstItem="Q9r-Ca-Jkz" firstAttribute="leading" secondItem="A90-ja-ZI4" secondAttribute="leading" id="HfV-N5-iK9"/>
                             <constraint firstItem="HwL-cr-dBf" firstAttribute="leading" secondItem="m9u-ci-Bko" secondAttribute="trailing" constant="25" id="Mdc-it-gVu"/>
-                            <constraint firstItem="J7J-iO-s5K" firstAttribute="bottom" secondItem="kqg-3g-6yV" secondAttribute="bottom" constant="25" id="Pgl-yj-7AU"/>
+                            <constraint firstItem="J7J-iO-s5K" firstAttribute="bottom" secondItem="kqg-3g-6yV" secondAttribute="bottom" id="Pgl-yj-7AU"/>
                             <constraint firstItem="J7J-iO-s5K" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HwL-cr-dBf" secondAttribute="trailing" constant="5" id="R6s-wi-LNF"/>
                             <constraint firstItem="J7J-iO-s5K" firstAttribute="trailing" secondItem="A90-ja-ZI4" secondAttribute="trailing" constant="25" id="RvV-Of-T3h"/>
                             <constraint firstItem="Q9r-Ca-Jkz" firstAttribute="top" secondItem="lk2-vx-HjC" secondAttribute="bottom" constant="25" id="TvU-2Q-gZc"/>
@@ -213,7 +236,7 @@
                             <constraint firstItem="m9u-ci-Bko" firstAttribute="leading" secondItem="J7J-iO-s5K" secondAttribute="leading" constant="25" id="VpB-7Y-ATt"/>
                             <constraint firstItem="lk2-vx-HjC" firstAttribute="leading" secondItem="HwL-cr-dBf" secondAttribute="leading" id="mfU-Vi-Bdy"/>
                             <constraint firstItem="HwL-cr-dBf" firstAttribute="centerY" secondItem="m9u-ci-Bko" secondAttribute="centerY" id="nwM-GO-vnZ"/>
-                            <constraint firstItem="J7J-iO-s5K" firstAttribute="trailing" secondItem="kqg-3g-6yV" secondAttribute="trailing" constant="25" id="sl6-71-mb1"/>
+                            <constraint firstItem="J7J-iO-s5K" firstAttribute="trailing" secondItem="kqg-3g-6yV" secondAttribute="trailing" id="sl6-71-mb1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J7J-iO-s5K"/>
                     </view>
@@ -227,7 +250,81 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNd-T1-0IS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844" y="70"/>
+            <point key="canvasLocation" x="1836" y="70"/>
+        </scene>
+        <!--New Train View Controller-->
+        <scene sceneID="BG9-lu-1gH">
+            <objects>
+                <viewController storyboardIdentifier="NewTrainViewController" id="jLE-oE-zRn" customClass="NewTrainViewController" customModule="LunchTrain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OBY-Ec-KDl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQZ-gF-YYD">
+                                <rect key="frame" x="0.0" y="613" width="375" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Train" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtw-RQ-Wt2">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                        <color key="textColor" red="0.99482670200000001" green="1" blue="0.99780765339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1764705926" green="0.49803921579999999" blue="0.75686275960000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vtw-RQ-Wt2" secondAttribute="bottom" id="Uoa-h6-17D"/>
+                                    <constraint firstItem="vtw-RQ-Wt2" firstAttribute="leading" secondItem="eQZ-gF-YYD" secondAttribute="leading" id="YaD-Cc-51I"/>
+                                    <constraint firstAttribute="height" constant="54" id="hIQ-2k-1hm"/>
+                                    <constraint firstItem="vtw-RQ-Wt2" firstAttribute="top" secondItem="eQZ-gF-YYD" secondAttribute="top" id="jNy-RK-B69"/>
+                                    <constraint firstAttribute="trailing" secondItem="vtw-RQ-Wt2" secondAttribute="trailing" id="kFU-Vm-PfJ"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Train Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5R-00-Yia">
+                                <rect key="frame" x="25" y="45" width="325" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NIl-lo-Uto">
+                                <rect key="frame" x="25" y="100" width="325" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eq3-t2-LNq">
+                                <rect key="frame" x="0.0" y="156" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="543356626.95061398">
+                                    <!--2018-03-21 20:23:46 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eBe-R6-8e9" firstAttribute="trailing" secondItem="eq3-t2-LNq" secondAttribute="trailing" id="2R8-Z6-lA7"/>
+                            <constraint firstItem="NIl-lo-Uto" firstAttribute="top" secondItem="L5R-00-Yia" secondAttribute="bottom" constant="25" id="3eV-lV-Tjr"/>
+                            <constraint firstItem="L5R-00-Yia" firstAttribute="top" secondItem="eBe-R6-8e9" secondAttribute="top" constant="25" id="6iv-pe-csZ"/>
+                            <constraint firstItem="eQZ-gF-YYD" firstAttribute="leading" secondItem="eBe-R6-8e9" secondAttribute="leading" id="D0g-hG-JcF"/>
+                            <constraint firstItem="eBe-R6-8e9" firstAttribute="trailing" secondItem="eQZ-gF-YYD" secondAttribute="trailing" id="XWX-H3-k3m"/>
+                            <constraint firstItem="L5R-00-Yia" firstAttribute="leading" secondItem="eBe-R6-8e9" secondAttribute="leading" constant="25" id="ei2-me-dwl"/>
+                            <constraint firstItem="NIl-lo-Uto" firstAttribute="leading" secondItem="eBe-R6-8e9" secondAttribute="leading" constant="25" id="ihz-IG-Rct"/>
+                            <constraint firstItem="eq3-t2-LNq" firstAttribute="top" secondItem="NIl-lo-Uto" secondAttribute="bottom" constant="26" id="l2c-3O-FRG"/>
+                            <constraint firstItem="eBe-R6-8e9" firstAttribute="bottom" secondItem="eQZ-gF-YYD" secondAttribute="bottom" id="l9w-v7-Oir"/>
+                            <constraint firstItem="eq3-t2-LNq" firstAttribute="leading" secondItem="eBe-R6-8e9" secondAttribute="leading" id="ldI-zN-jst"/>
+                            <constraint firstItem="eBe-R6-8e9" firstAttribute="trailing" secondItem="L5R-00-Yia" secondAttribute="trailing" constant="25" id="tgy-jY-oXD"/>
+                            <constraint firstItem="eBe-R6-8e9" firstAttribute="trailing" secondItem="NIl-lo-Uto" secondAttribute="trailing" constant="25" id="x8a-HT-1Zb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eBe-R6-8e9"/>
+                    </view>
+                    <connections>
+                        <outlet property="createTrainButton" destination="eQZ-gF-YYD" id="RPt-8X-5Fh"/>
+                        <outlet property="datePicker" destination="eq3-t2-LNq" id="5Lb-2w-o59"/>
+                        <outlet property="placeField" destination="NIl-lo-Uto" id="QV1-DE-Kxo"/>
+                        <outlet property="titleField" destination="L5R-00-Yia" id="XTi-ce-Jxz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ufk-ux-g2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="752"/>
         </scene>
     </scenes>
     <resources>
