@@ -1,6 +1,10 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "90bec377400dbb40c4ad9ed00870b150"
-build_time: [1521648026, 965798000]
+options: "269ee75f1cc80b150c3acedd08c97a5d"
+build_time: [1521655342, 221277000]
 inputs:
-  "/Users/niamhpower/work/lunch-train/LunchTrain/LunchTrain/ViewController.swift": [1521648017, 0]
+  "/Users/niamhpower/work/lunch-train/LunchTrain/LunchTrain/ViewController.swift": [1521652027, 0]
+  "/Users/niamhpower/work/lunch-train/LunchTrain/LunchTrain/TrainCreatorViewController.swift": [1521649009, 0]
+  "/Users/niamhpower/work/lunch-train/LunchTrain/LunchTrain/NetworkService.swift": [1521649700, 0]
+  "/Users/niamhpower/work/lunch-train/LunchTrain/LunchTrain/Train.swift": [1521655338, 0]
   "/Users/niamhpower/work/lunch-train/LunchTrain/LunchTrain/AppDelegate.swift": [1521647859, 0]
+  "/Users/niamhpower/work/lunch-train/LunchTrain/LunchTrain/TrainList/TrainListViewController.swift": [1521654994, 0]

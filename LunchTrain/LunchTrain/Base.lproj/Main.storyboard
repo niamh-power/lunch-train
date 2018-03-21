@@ -1,24 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Thonburi.ttc">
+            <string>Thonburi</string>
+            <string>Thonburi-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="tU4-vK-w4l">
+            <objects>
+                <navigationController id="3GJ-5c-fqE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vLr-Zm-Ddn">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="B3b-Uu-HNO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRh-bJ-Ukm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1119" y="98"/>
+        </scene>
+        <!--showList-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="showList" id="BYZ-38-t0r" customClass="ViewController" customModule="LunchTrain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nMj-cf-hzv"/>
+                    <connections>
+                        <segue destination="mFO-VD-VZg" kind="show" identifier="showList" id="PjA-QM-bvv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-36" y="81"/>
+        </scene>
+        <!--Train List View Controller-->
+        <scene sceneID="zAo-w2-8Xq">
+            <objects>
+                <viewController id="mFO-VD-VZg" customClass="TrainListViewController" customModule="LunchTrain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RBH-FM-YTr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UP5-zY-YWr">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="151" id="cft-X5-g29" customClass="TrainTableViewCell" customModule="LunchTrain" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="151"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cft-X5-g29" id="T3K-gc-E55">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger" translatesAutoresizingMaskIntoConstraints="NO" id="3uq-fY-67l">
+                                                    <rect key="frame" x="25" y="5" width="43" height="140.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25x-G0-mNv">
+                                                    <rect key="frame" x="87" y="10" width="83" height="22.5"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passengers: Frank, Pawel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHd-g9-i3Q">
+                                                    <rect key="frame" x="87" y="72.5" width="204.5" height="22.5"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organiser: Niamh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQU-Nu-Jy7">
+                                                    <rect key="frame" x="87" y="40" width="139.5" height="22.5"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="25x-G0-mNv" firstAttribute="top" secondItem="T3K-gc-E55" secondAttribute="top" constant="10" id="308-Hp-htw"/>
+                                                <constraint firstItem="3uq-fY-67l" firstAttribute="leading" secondItem="T3K-gc-E55" secondAttribute="leading" constant="25" id="5pr-CF-mYi"/>
+                                                <constraint firstItem="XHd-g9-i3Q" firstAttribute="leading" secondItem="PQU-Nu-Jy7" secondAttribute="leading" id="AVz-r5-H8K"/>
+                                                <constraint firstItem="PQU-Nu-Jy7" firstAttribute="leading" secondItem="25x-G0-mNv" secondAttribute="leading" id="Il6-ap-leD"/>
+                                                <constraint firstItem="XHd-g9-i3Q" firstAttribute="top" secondItem="PQU-Nu-Jy7" secondAttribute="bottom" constant="10" id="JDx-mq-d63"/>
+                                                <constraint firstItem="3uq-fY-67l" firstAttribute="top" secondItem="T3K-gc-E55" secondAttribute="top" constant="5" id="QDW-nu-0Ve"/>
+                                                <constraint firstAttribute="bottom" secondItem="3uq-fY-67l" secondAttribute="bottom" constant="5" id="Tr8-9f-lwM"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XHd-g9-i3Q" secondAttribute="bottom" constant="10" id="b3w-3r-plz"/>
+                                                <constraint firstItem="PQU-Nu-Jy7" firstAttribute="top" secondItem="25x-G0-mNv" secondAttribute="bottom" constant="8" id="sAH-r7-sNL"/>
+                                                <constraint firstItem="25x-G0-mNv" firstAttribute="leading" secondItem="3uq-fY-67l" secondAttribute="trailing" constant="19" id="t7G-ld-LQS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="organiserLabel" destination="PQU-Nu-Jy7" id="sZo-ct-aw0"/>
+                                            <outlet property="passengersLabel" destination="XHd-g9-i3Q" id="XLA-uB-Pqc"/>
+                                            <outlet property="trainIcon" destination="3uq-fY-67l" id="Wf9-oX-cup"/>
+                                            <outlet property="trainTitleLabel" destination="25x-G0-mNv" id="epO-4q-MRz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jTE-LW-yUG" firstAttribute="trailing" secondItem="UP5-zY-YWr" secondAttribute="trailing" id="4Ko-6T-91B"/>
+                            <constraint firstItem="UP5-zY-YWr" firstAttribute="leading" secondItem="jTE-LW-yUG" secondAttribute="leading" id="Pua-10-D56"/>
+                            <constraint firstItem="UP5-zY-YWr" firstAttribute="top" secondItem="jTE-LW-yUG" secondAttribute="top" id="fhY-tx-UMB"/>
+                            <constraint firstItem="jTE-LW-yUG" firstAttribute="bottom" secondItem="UP5-zY-YWr" secondAttribute="bottom" id="usF-Q6-c4b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jTE-LW-yUG"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="UP5-zY-YWr" id="DOY-vu-91i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="usy-la-hd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061.5999999999999" y="81.409295352323838"/>
+        </scene>
+        <!--Train Detail View Controller-->
+        <scene sceneID="LYD-QO-miB">
+            <objects>
+                <viewController id="aeT-5V-FGY" customClass="TrainDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X32-2V-2rs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burger" translatesAutoresizingMaskIntoConstraints="NO" id="m9u-ci-Bko">
+                                <rect key="frame" x="25" y="54" width="43" height="43"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Train Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwL-cr-dBf">
+                                <rect key="frame" x="93" y="56.5" width="150" height="39"/>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organiser: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lk2-vx-HjC">
+                                <rect key="frame" x="93" y="103" width="89" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9r-Ca-Jkz">
+                                <rect key="frame" x="25" y="150.5" width="92" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A90-ja-ZI4">
+                                <rect key="frame" x="25" y="183" width="325" height="380"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqg-3g-6yV">
+                                <rect key="frame" x="25" y="588" width="325" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Train" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlO-9y-NtX">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="54"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
+                                        <color key="textColor" red="0.99482670200000001" green="1" blue="0.99780765339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1764705926" green="0.49803921579999999" blue="0.75686275960000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="GlO-9y-NtX" firstAttribute="leading" secondItem="kqg-3g-6yV" secondAttribute="leading" id="Cv7-Iw-1Ha"/>
+                                    <constraint firstItem="GlO-9y-NtX" firstAttribute="top" secondItem="kqg-3g-6yV" secondAttribute="top" id="NgV-7m-Hl5"/>
+                                    <constraint firstAttribute="height" constant="54" id="SP1-o7-SIq"/>
+                                    <constraint firstAttribute="trailing" secondItem="GlO-9y-NtX" secondAttribute="trailing" id="VPV-hF-bqJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="GlO-9y-NtX" secondAttribute="bottom" id="XUW-jD-Wcw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lk2-vx-HjC" firstAttribute="top" secondItem="HwL-cr-dBf" secondAttribute="bottom" constant="7.5" id="0RC-F9-1aF"/>
+                            <constraint firstItem="A90-ja-ZI4" firstAttribute="leading" secondItem="J7J-iO-s5K" secondAttribute="leading" constant="25" id="5tq-GF-ezP"/>
+                            <constraint firstItem="kqg-3g-6yV" firstAttribute="top" secondItem="A90-ja-ZI4" secondAttribute="bottom" constant="25" id="ERR-pe-Mqp"/>
+                            <constraint firstItem="kqg-3g-6yV" firstAttribute="leading" secondItem="J7J-iO-s5K" secondAttribute="leading" constant="25" id="EZE-Sh-GTT"/>
+                            <constraint firstItem="Q9r-Ca-Jkz" firstAttribute="leading" secondItem="A90-ja-ZI4" secondAttribute="leading" id="HfV-N5-iK9"/>
+                            <constraint firstItem="HwL-cr-dBf" firstAttribute="leading" secondItem="m9u-ci-Bko" secondAttribute="trailing" constant="25" id="Mdc-it-gVu"/>
+                            <constraint firstItem="J7J-iO-s5K" firstAttribute="bottom" secondItem="kqg-3g-6yV" secondAttribute="bottom" constant="25" id="Pgl-yj-7AU"/>
+                            <constraint firstItem="J7J-iO-s5K" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HwL-cr-dBf" secondAttribute="trailing" constant="5" id="R6s-wi-LNF"/>
+                            <constraint firstItem="J7J-iO-s5K" firstAttribute="trailing" secondItem="A90-ja-ZI4" secondAttribute="trailing" constant="25" id="RvV-Of-T3h"/>
+                            <constraint firstItem="Q9r-Ca-Jkz" firstAttribute="top" secondItem="lk2-vx-HjC" secondAttribute="bottom" constant="25" id="TvU-2Q-gZc"/>
+                            <constraint firstItem="m9u-ci-Bko" firstAttribute="top" secondItem="J7J-iO-s5K" secondAttribute="top" constant="34" id="Uoj-za-P2f"/>
+                            <constraint firstItem="A90-ja-ZI4" firstAttribute="top" secondItem="Q9r-Ca-Jkz" secondAttribute="bottom" constant="10" id="Uzf-nV-b9Q"/>
+                            <constraint firstItem="m9u-ci-Bko" firstAttribute="leading" secondItem="J7J-iO-s5K" secondAttribute="leading" constant="25" id="VpB-7Y-ATt"/>
+                            <constraint firstItem="lk2-vx-HjC" firstAttribute="leading" secondItem="HwL-cr-dBf" secondAttribute="leading" id="mfU-Vi-Bdy"/>
+                            <constraint firstItem="HwL-cr-dBf" firstAttribute="centerY" secondItem="m9u-ci-Bko" secondAttribute="centerY" id="nwM-GO-vnZ"/>
+                            <constraint firstItem="J7J-iO-s5K" firstAttribute="trailing" secondItem="kqg-3g-6yV" secondAttribute="trailing" constant="25" id="sl6-71-mb1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J7J-iO-s5K"/>
+                    </view>
+                    <connections>
+                        <outlet property="organiserLabel" destination="lk2-vx-HjC" id="QIB-Nv-YoU"/>
+                        <outlet property="trainTitleLabel" destination="HwL-cr-dBf" id="y3h-QA-QsC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNd-T1-0IS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912.8" y="80.50974512743629"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="burger" width="43" height="43"/>
+    </resources>
 </document>

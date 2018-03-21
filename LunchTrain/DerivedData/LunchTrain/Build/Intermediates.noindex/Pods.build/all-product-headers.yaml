@@ -4,6 +4,28 @@
   'roots': [
     {
       'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/BoringSSL/openssl.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "openssl-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/BoringSSL/openssl.framework/Headers/openssl-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/BoringSSL/openssl.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/BoringSSL.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/GTMOAuth2/GTMOAuth2.framework/Headers",
       'contents': [
         {
@@ -192,6 +214,551 @@
           'type': 'file',
           'name': "module.modulemap",
           'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Pods-LunchTrain.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/Protobuf/Protobuf.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Any.pbobjc.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/google/protobuf/Any.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Api.pbobjc.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/google/protobuf/Api.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Duration.pbobjc.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/google/protobuf/Duration.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Empty.pbobjc.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/google/protobuf/Empty.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "FieldMask.pbobjc.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/google/protobuf/FieldMask.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBArray.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBArray.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBArray_PackagePrivate.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBArray_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBBootstrap.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBBootstrap.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBCodedInputStream.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBCodedInputStream.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBCodedInputStream_PackagePrivate.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBCodedInputStream_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBCodedOutputStream.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBCodedOutputStream.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBCodedOutputStream_PackagePrivate.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBCodedOutputStream_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBDescriptor.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBDescriptor.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBDescriptor_PackagePrivate.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBDescriptor_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBDictionary.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBDictionary.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBDictionary_PackagePrivate.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBDictionary_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBExtensionInternals.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBExtensionInternals.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBExtensionRegistry.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBExtensionRegistry.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBMessage.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBMessage.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBMessage_PackagePrivate.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBMessage_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBProtocolBuffers.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBProtocolBuffers.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBProtocolBuffers_RuntimeSupport.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBProtocolBuffers_RuntimeSupport.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBRootObject.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBRootObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBRootObject_PackagePrivate.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBRootObject_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBRuntimeTypes.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBRuntimeTypes.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBUnknownField.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBUnknownField.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBUnknownFieldSet.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBUnknownFieldSet.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBUnknownFieldSet_PackagePrivate.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBUnknownFieldSet_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBUnknownField_PackagePrivate.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBUnknownField_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBUtilities.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBUtilities.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBUtilities_PackagePrivate.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBUtilities_PackagePrivate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBWellKnownTypes.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBWellKnownTypes.h"
+        },
+        {
+          'type': 'file',
+          'name': "GPBWireFormat.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/GPBWireFormat.h"
+        },
+        {
+          'type': 'file',
+          'name': "Protobuf-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/Protobuf/Protobuf.framework/Headers/Protobuf-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Protobuf-umbrella.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Target Support Files/Protobuf/Protobuf-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "SourceContext.pbobjc.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/google/protobuf/SourceContext.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Struct.pbobjc.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Timestamp.pbobjc.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/google/protobuf/Timestamp.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Type.pbobjc.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/google/protobuf/Type.pbobjc.h"
+        },
+        {
+          'type': 'file',
+          'name': "Wrappers.pbobjc.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Protobuf/objectivec/google/protobuf/Wrappers.pbobjc.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/Protobuf/Protobuf.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Protobuf.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SnapKit-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Headers/SnapKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SnapKit-umbrella.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Target Support Files/SnapKit/SnapKit-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SnapKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC-Core/grpc.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "grpc-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC-Core/grpc.framework/Headers/grpc-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC-Core/grpc.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/gRPC-Core.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC-ProtoRPC/ProtoRPC.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "ProtoRPC-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC-ProtoRPC/ProtoRPC.framework/Headers/ProtoRPC-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "gRPC-ProtoRPC-umbrella.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Target Support Files/gRPC-ProtoRPC/gRPC-ProtoRPC-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC-ProtoRPC/ProtoRPC.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/gRPC-ProtoRPC.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC-RxLibrary/RxLibrary.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "RxLibrary-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC-RxLibrary/RxLibrary.framework/Headers/RxLibrary-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "gRPC-RxLibrary-umbrella.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Target Support Files/gRPC-RxLibrary/gRPC-RxLibrary-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC-RxLibrary/RxLibrary.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/gRPC-RxLibrary.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC/GRPCClient.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GRPCCall+ChannelArg.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/GRPCCall+ChannelArg.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCCall+ChannelCredentials.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/GRPCCall+ChannelCredentials.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCCall+Cronet.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/GRPCCall+Cronet.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCCall+InternalTests.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/internal_testing/GRPCCall+InternalTests.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCCall+OAuth2.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/GRPCCall+OAuth2.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCCall+Tests.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/GRPCCall+Tests.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCCall.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/GRPCCall.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCClient-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC/GRPCClient.framework/Headers/GRPCClient-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "gRPC-umbrella.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Target Support Files/gRPC/gRPC-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC/GRPCClient.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/gRPC.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/gRPC/GRPCClient.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GRPCChannel.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/private/GRPCChannel.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCCompletionQueue.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/private/GRPCCompletionQueue.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCConnectivityMonitor.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/private/GRPCConnectivityMonitor.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCHost.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/private/GRPCHost.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCOpBatchLog.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/private/GRPCOpBatchLog.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCReachabilityFlagNames.xmacro.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/private/GRPCReachabilityFlagNames.xmacro.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCRequestHeaders.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/private/GRPCRequestHeaders.h"
+        },
+        {
+          'type': 'file',
+          'name': "GRPCWrappedCall.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/private/GRPCWrappedCall.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSData+GRPC.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/private/NSData+GRPC.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSDictionary+GRPC.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/private/NSDictionary+GRPC.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSError+GRPC.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/private/NSError+GRPC.h"
+        },
+        {
+          'type': 'file',
+          'name': "version.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/gRPC/src/objective-c/GRPCClient/private/version.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "c.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/c.h"
+        },
+        {
+          'type': 'file',
+          'name': "cache.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/cache.h"
+        },
+        {
+          'type': 'file',
+          'name': "comparator.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/comparator.h"
+        },
+        {
+          'type': 'file',
+          'name': "db.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/db.h"
+        },
+        {
+          'type': 'file',
+          'name': "dumpfile.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/dumpfile.h"
+        },
+        {
+          'type': 'file',
+          'name': "env.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/env.h"
+        },
+        {
+          'type': 'file',
+          'name': "filter_policy.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/filter_policy.h"
+        },
+        {
+          'type': 'file',
+          'name': "iterator.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/iterator.h"
+        },
+        {
+          'type': 'file',
+          'name': "leveldb-Swift.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Headers/leveldb-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "leveldb-library-umbrella.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/Target Support Files/leveldb-library/leveldb-library-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "options.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/options.h"
+        },
+        {
+          'type': 'file',
+          'name': "slice.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/slice.h"
+        },
+        {
+          'type': 'file',
+          'name': "status.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/status.h"
+        },
+        {
+          'type': 'file',
+          'name': "table.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/table.h"
+        },
+        {
+          'type': 'file',
+          'name': "table_builder.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/table_builder.h"
+        },
+        {
+          'type': 'file',
+          'name': "write_batch.h",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/leveldb-library/include/leveldb/write_batch.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/leveldb-library/leveldb.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/leveldb-library.build/module.modulemap"
         }
       ]
     },

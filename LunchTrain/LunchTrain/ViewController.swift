@@ -26,7 +26,7 @@ class ViewController: UIViewController, FUIAuthDelegate {
         super.viewDidAppear(animated)
 
         if Auth.auth().currentUser != nil {
-            //presentHome()
+            performSegue(withIdentifier: "showList", sender: self)
         } else {
             let authUI = FUIAuth.defaultAuthUI()
             authUI?.delegate = self
@@ -41,8 +41,7 @@ class ViewController: UIViewController, FUIAuthDelegate {
     }
 
     func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
-        //presentChatScreen()
+        performSegue(withIdentifier: "showList", sender: self)
     }
-
 }
 
