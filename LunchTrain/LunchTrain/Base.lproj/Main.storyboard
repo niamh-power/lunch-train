@@ -79,8 +79,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passengers: Frank, Pawel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHd-g9-i3Q">
-                                                    <rect key="frame" x="87" y="72.5" width="204.5" height="22.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ 12:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHd-g9-i3Q" userLabel="Time Label">
+                                                    <rect key="frame" x="87" y="72.5" width="71" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -107,7 +107,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="organiserLabel" destination="PQU-Nu-Jy7" id="sZo-ct-aw0"/>
-                                            <outlet property="passengersLabel" destination="XHd-g9-i3Q" id="XLA-uB-Pqc"/>
+                                            <outlet property="timeLabel" destination="XHd-g9-i3Q" id="J1j-Nb-yNx"/>
                                             <outlet property="trainIcon" destination="3uq-fY-67l" id="Wf9-oX-cup"/>
                                             <outlet property="trainTitleLabel" destination="25x-G0-mNv" id="epO-4q-MRz"/>
                                         </connections>
@@ -165,6 +165,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A90-ja-ZI4">
                                 <rect key="frame" x="25" y="227" width="325" height="336"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Xdm-v1-hBi">
+                                        <rect key="frame" x="0.0" y="28" width="325" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xdm-v1-hBi" id="nxe-e0-9Iq">
+                                            <rect key="frame" x="0.0" y="0.0" width="325" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqg-3g-6yV">
                                 <rect key="frame" x="25" y="588" width="325" height="54"/>

@@ -10,7 +10,6 @@ provides-member:
 - ["10LunchTrain0B0V", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Array"
 - "CastingPrecedence"
 - "Date"
 - "DocumentSerializable"
@@ -36,10 +35,12 @@ depends-member:
 - !private ["s9DecodableP", "subscript"]
 - !private ["s10DictionaryV", "subscript"]
 - ["10LunchTrain20DocumentSerializableP", "init"]
+- !private ["10LunchTrain20DocumentSerializableP", "name"]
 - !private ["10LunchTrain20DocumentSerializableP", "owner"]
-- !private ["10LunchTrain20DocumentSerializableP", "passengers"]
 - !private ["10LunchTrain20DocumentSerializableP", "place"]
 - !private ["10LunchTrain20DocumentSerializableP", "time"]
+- !private ["10LunchTrain20DocumentSerializableP", "title"]
+- !private ["10LunchTrain20DocumentSerializableP", "userId"]
 - ["10LunchTrain20DocumentSerializableP", ""]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "subscript"]
@@ -60,8 +61,11 @@ depends-member:
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
 - ["10LunchTrain6PersonV", "String"]
+- ["10LunchTrain6PersonV", "deinit"]
+- ["10LunchTrain6PersonV", "dictionary"]
 - ["10LunchTrain6PersonV", "init"]
 - ["10LunchTrain6PersonV", "name"]
+- ["10LunchTrain6PersonV", "userId"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "subscript"]
@@ -75,9 +79,9 @@ depends-member:
 - ["10LunchTrain0B0V", "dictionary"]
 - ["10LunchTrain0B0V", "init"]
 - ["10LunchTrain0B0V", "owner"]
-- ["10LunchTrain0B0V", "passengers"]
 - ["10LunchTrain0B0V", "place"]
 - ["10LunchTrain0B0V", "time"]
+- ["10LunchTrain0B0V", "title"]
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -245,4 +249,4 @@ depends-external:
 - "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/niamhpower/work/lunch-train/LunchTrain/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/niamhpower/work/lunch-train/LunchTrain/DerivedData/LunchTrain/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Modules/module.modulemap"
-interface-hash: "d70a2630464ebe0059d6b32cbdbb9e6e"
+interface-hash: "ebf26005d22e80981c867866ee582c8b"

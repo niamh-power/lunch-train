@@ -215,20 +215,25 @@ SWIFT_CLASS("_TtC10LunchTrain26TrainCreatorViewController")
 @class UIView;
 @class UITableView;
 @class UILabel;
+@class UITapGestureRecognizer;
+@class UITableViewCell;
 
 SWIFT_CLASS("_TtC10LunchTrain25TrainDetailViewController")
-@interface TrainDetailViewController : UIViewController
+@interface TrainDetailViewController : UIViewController <UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified trainIcon;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified joinTrainButtonView;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified passengersTableView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified organiserLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
 - (void)viewDidLoad;
+- (void)joinPressedWithSender:(UITapGestureRecognizer * _Nonnull)sender;
+- (void)viewWillAppear:(BOOL)animated;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableViewCell;
 
 SWIFT_CLASS("_TtC10LunchTrain23TrainListViewController")
 @interface TrainListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
@@ -236,7 +241,6 @@ SWIFT_CLASS("_TtC10LunchTrain23TrainListViewController")
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
-@property (nonatomic) UIStatusBarStyle preferredStatusBarStyle;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -247,7 +251,7 @@ SWIFT_CLASS("_TtC10LunchTrain23TrainListViewController")
 
 SWIFT_CLASS("_TtC10LunchTrain18TrainTableViewCell")
 @interface TrainTableViewCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified passengersLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified organiserLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified trainIcon;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified trainTitleLabel;

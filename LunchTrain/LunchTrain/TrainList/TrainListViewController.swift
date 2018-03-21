@@ -65,38 +65,20 @@ class TrainListViewController: UIViewController, UITableViewDataSource, UITableV
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Blue bar with white color
-        navigationController?.navigationBar.barTintColor =
-            UIColor(red: 0x3d/0xff, green: 0x5a/0xff, blue: 0xfe/0xff, alpha: 1.0)
-        navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.titleTextAttributes =
-            [ NSAttributedStringKey.foregroundColor: UIColor.white ]
-
         tableView.dataSource = self
         tableView.delegate = self
         tableView.estimatedRowHeight = 200
         query = baseQuery()
-
-        self.navigationController?.navigationBar.barStyle = .black
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.setNeedsStatusBarAppearanceUpdate()
         observeQuery()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         stopObserving()
-    }
-
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        set {}
-        get {
-            return .lightContent
-        }
     }
 
     deinit {
@@ -124,6 +106,8 @@ class TrainListViewController: UIViewController, UITableViewDataSource, UITableV
 
         let vc = TrainDetailViewController.fromStoryboard()
         vc.train = selectedTrain
+        vc.trainReference = documents[indexPath.row].reference
+
         navigationController?.pushViewController(vc, animated: true)
     }
 
@@ -131,12 +115,19 @@ class TrainListViewController: UIViewController, UITableViewDataSource, UITableV
 
 class TrainTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var passengersLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var organiserLabel: UILabel!
     @IBOutlet weak var trainIcon: UIImageView!
     @IBOutlet weak var trainTitleLabel: UILabel!
 
     func populate(train: Train) {
         organiserLabel.text = train.owner
+        trainTitleLabel.text = train.title
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .none
+        dateFormatter.timeStyle = .short
+
+        timeLabel.text = dateFormatter.string(from: train.time)
     }
 }
