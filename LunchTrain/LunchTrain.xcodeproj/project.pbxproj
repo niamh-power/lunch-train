@@ -13,13 +13,13 @@
 		7102834C2062B63E000EF70E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7102834B2062B63E000EF70E /* Assets.xcassets */; };
 		7102834F2062B63E000EF70E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7102834D2062B63E000EF70E /* LaunchScreen.storyboard */; };
 		7102835A2062B63E000EF70E /* LunchTrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710283592062B63E000EF70E /* LunchTrainTests.swift */; };
-		71065BD42062B9B1008FFF55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71065BD32062B9B1008FFF55 /* GoogleService-Info.plist */; };
 		71065BD72062BCDD008FFF55 /* TrainCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71065BD62062BCDD008FFF55 /* TrainCreatorViewController.swift */; };
 		71065BD92062BD02008FFF55 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71065BD82062BD02008FFF55 /* NetworkService.swift */; };
 		71065BDB2062BE3C008FFF55 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71065BDA2062BE3C008FFF55 /* Train.swift */; };
 		71065BDF2062C177008FFF55 /* TrainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71065BDE2062C177008FFF55 /* TrainListViewController.swift */; };
 		7157297A2062D88A008354DC /* TrainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715729792062D88A008354DC /* TrainDetailViewController.swift */; };
 		7157297C2062F130008354DC /* NewTrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7157297B2062F130008354DC /* NewTrainViewController.swift */; };
+		715729882063CB22008354DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 715729872063CB21008354DC /* GoogleService-Info.plist */; };
 		7DEC7B725B0000916B18AEDF /* Pods_LunchTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A28F6FA3E04E8A1DB42762 /* Pods_LunchTrain.framework */; };
 		9092A2C7BB89F33679DEC705 /* Pods_LunchTrainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CA036A064572006CF1EB89 /* Pods_LunchTrainTests.framework */; };
 /* End PBXBuildFile section */
@@ -49,13 +49,14 @@
 		710283552062B63E000EF70E /* LunchTrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunchTrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		710283592062B63E000EF70E /* LunchTrainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchTrainTests.swift; sourceTree = "<group>"; };
 		7102835B2062B63E000EF70E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71065BD32062B9B1008FFF55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		71065BD62062BCDD008FFF55 /* TrainCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCreatorViewController.swift; sourceTree = "<group>"; };
 		71065BD82062BD02008FFF55 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		71065BDA2062BE3C008FFF55 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
 		71065BDE2062C177008FFF55 /* TrainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListViewController.swift; sourceTree = "<group>"; };
 		715729792062D88A008354DC /* TrainDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainDetailViewController.swift; sourceTree = "<group>"; };
 		7157297B2062F130008354DC /* NewTrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrainViewController.swift; sourceTree = "<group>"; };
+		715729872063CB21008354DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		715729892063CC53008354DC /* LunchTrain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LunchTrain.entitlements; sourceTree = "<group>"; };
 		90CA036A064572006CF1EB89 /* Pods_LunchTrainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchTrainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B600682AAF307F669CE71A48 /* Pods-LunchTrainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTrainTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTrainTests/Pods-LunchTrainTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,10 +115,11 @@
 		710283432062B63D000EF70E /* LunchTrain */ = {
 			isa = PBXGroup;
 			children = (
+				715729892063CC53008354DC /* LunchTrain.entitlements */,
+				715729872063CB21008354DC /* GoogleService-Info.plist */,
 				71065BD52062BB36008FFF55 /* TrainList */,
 				710283442062B63D000EF70E /* AppDelegate.swift */,
 				710283462062B63E000EF70E /* ViewController.swift */,
-				71065BD32062B9B1008FFF55 /* GoogleService-Info.plist */,
 				710283482062B63E000EF70E /* Main.storyboard */,
 				7102834B2062B63E000EF70E /* Assets.xcassets */,
 				7102834D2062B63E000EF70E /* LaunchScreen.storyboard */,
@@ -214,6 +216,11 @@
 					710283402062B63D000EF70E = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					710283542062B63E000EF70E = {
 						CreatedOnToolsVersion = 9.2;
@@ -247,9 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7102834F2062B63E000EF70E /* LaunchScreen.storyboard in Resources */,
+				715729882063CB22008354DC /* GoogleService-Info.plist in Resources */,
 				7102834C2062B63E000EF70E /* Assets.xcassets in Resources */,
 				7102834A2062B63E000EF70E /* Main.storyboard in Resources */,
-				71065BD42062B9B1008FFF55 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,12 +566,15 @@
 			baseConfigurationReference = 2206D309C108025966CDBD87 /* Pods-LunchTrain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LunchTrain/LunchTrain.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J57J73XKG5;
+				DEVELOPMENT_TEAM = L95VYZHMJB;
 				INFOPLIST_FILE = LunchTrain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.npower.LunchTrain;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.npower.lunch-train";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -575,12 +585,15 @@
 			baseConfigurationReference = 512189AEA7DC7974F6D1E10D /* Pods-LunchTrain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LunchTrain/LunchTrain.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J57J73XKG5;
+				DEVELOPMENT_TEAM = L95VYZHMJB;
 				INFOPLIST_FILE = LunchTrain/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.npower.LunchTrain;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.npower.lunch-train";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
