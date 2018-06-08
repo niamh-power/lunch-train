@@ -6,25 +6,15 @@
 //  Copyright © 2018 npower. All rights reserved.
 //
 
-import Foundation
 import UIKit
-import FirebaseFirestore
-import FirebaseAuth
 
-class NewTrainViewController: UIViewController {
+class NewTrainViewController: ViewController<NewTrainViewModel> {
 
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var createTrainButton: UIView!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var placeField: UITextField!
     @IBOutlet weak var titleField: UITextField!
-
-    private var viewModel = NewTrainViewModel()
-
-    static func fromStoryboard(_ storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)) -> NewTrainViewController {
-        let controller = storyboard.instantiateViewController(withIdentifier: "NewTrainViewController") as! NewTrainViewController
-        return controller
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -53,8 +53,17 @@ class TrainListViewController: ViewController<TrainListViewModel> {
     }
 
     @objc func addPressed(sender:UITapGestureRecognizer){
-        let controller = NewTrainViewController.fromStoryboard()
-        self.navigationController?.present(controller, animated: true, completion: nil)
+        performSegue(withIdentifier: "addTrain", sender: self)
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+
+        guard
+            let viewController = segue.destination as? NewTrainViewController
+            else { return }
+
+        viewController.viewModel = NewTrainViewModel()
     }
 
     override func viewWillAppear(_ animated: Bool) {

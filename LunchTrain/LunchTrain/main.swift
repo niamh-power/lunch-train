@@ -12,6 +12,7 @@ import UIKit
 
 // reference each view controller before UIApplicationMain runs
 print(TrainListViewController.self)
+print(NewTrainViewController.self)
 
 // The following is required because there's an impedence mismatch between
 // `CommandLine` and `UIApplicationMain` <rdar://problem/25693546>.

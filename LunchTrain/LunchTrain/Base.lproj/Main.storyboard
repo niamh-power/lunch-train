@@ -144,6 +144,7 @@
                         <outlet property="createTrainButton" destination="4ua-Zb-FbM" id="PLY-VP-bR0"/>
                         <outlet property="tableView" destination="UP5-zY-YWr" id="DOY-vu-91i"/>
                         <segue destination="aeT-5V-FGY" kind="show" identifier="showDetail" id="X89-Zu-q9U"/>
+                        <segue destination="jLE-oE-zRn" kind="presentation" identifier="addTrain" id="D6o-sf-6ui"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="usy-la-hd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -325,7 +326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ufk-ux-g2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="752"/>
+            <point key="canvasLocation" x="1054" y="933"/>
         </scene>
     </scenes>
     <resources>
