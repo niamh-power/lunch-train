@@ -12,7 +12,6 @@ import FirebaseAuthUI
 import FirebaseMessaging
 import UserNotifications
 
-@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
 
     var window: UIWindow?

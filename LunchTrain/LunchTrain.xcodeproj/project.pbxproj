@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		710283452062B63D000EF70E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710283442062B63D000EF70E /* AppDelegate.swift */; };
-		710283472062B63E000EF70E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710283462062B63E000EF70E /* ViewController.swift */; };
+		710283472062B63E000EF70E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710283462062B63E000EF70E /* BaseViewController.swift */; };
 		7102834A2062B63E000EF70E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710283482062B63E000EF70E /* Main.storyboard */; };
 		7102834C2062B63E000EF70E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7102834B2062B63E000EF70E /* Assets.xcassets */; };
 		7102834F2062B63E000EF70E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7102834D2062B63E000EF70E /* LaunchScreen.storyboard */; };
 		7102835A2062B63E000EF70E /* LunchTrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710283592062B63E000EF70E /* LunchTrainTests.swift */; };
 		71065BD72062BCDD008FFF55 /* TrainCreatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71065BD62062BCDD008FFF55 /* TrainCreatorViewController.swift */; };
 		71065BD92062BD02008FFF55 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71065BD82062BD02008FFF55 /* NetworkService.swift */; };
-		71065BDB2062BE3C008FFF55 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71065BDA2062BE3C008FFF55 /* Train.swift */; };
 		71065BDF2062C177008FFF55 /* TrainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71065BDE2062C177008FFF55 /* TrainListViewController.swift */; };
 		7157297A2062D88A008354DC /* TrainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715729792062D88A008354DC /* TrainDetailViewController.swift */; };
 		7157297C2062F130008354DC /* NewTrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7157297B2062F130008354DC /* NewTrainViewController.swift */; };
 		715729882063CB22008354DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 715729872063CB21008354DC /* GoogleService-Info.plist */; };
+		71B12F2620CA8B8D00CE559D /* TrainListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F2520CA8B8D00CE559D /* TrainListViewModel.swift */; };
+		71B12F2820CA8B9600CE559D /* TrainListViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F2720CA8B9600CE559D /* TrainListViewData.swift */; };
+		71B12F2A20CA948000CE559D /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F2920CA948000CE559D /* Train.swift */; };
+		71B12F2D20CA9B2300CE559D /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F2C20CA9B2300CE559D /* ViewController+Ext.swift */; };
+		71B12F2F20CA9BE900CE559D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F2E20CA9BE900CE559D /* main.swift */; };
 		7DEC7B725B0000916B18AEDF /* Pods_LunchTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A28F6FA3E04E8A1DB42762 /* Pods_LunchTrain.framework */; };
 		9092A2C7BB89F33679DEC705 /* Pods_LunchTrainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CA036A064572006CF1EB89 /* Pods_LunchTrainTests.framework */; };
 /* End PBXBuildFile section */
@@ -41,7 +45,7 @@
 		56A28F6FA3E04E8A1DB42762 /* Pods_LunchTrain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchTrain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		710283412062B63D000EF70E /* LunchTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		710283442062B63D000EF70E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		710283462062B63E000EF70E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		710283462062B63E000EF70E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		710283492062B63E000EF70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7102834B2062B63E000EF70E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7102834E2062B63E000EF70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,12 +55,16 @@
 		7102835B2062B63E000EF70E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71065BD62062BCDD008FFF55 /* TrainCreatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCreatorViewController.swift; sourceTree = "<group>"; };
 		71065BD82062BD02008FFF55 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		71065BDA2062BE3C008FFF55 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
 		71065BDE2062C177008FFF55 /* TrainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListViewController.swift; sourceTree = "<group>"; };
 		715729792062D88A008354DC /* TrainDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainDetailViewController.swift; sourceTree = "<group>"; };
 		7157297B2062F130008354DC /* NewTrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrainViewController.swift; sourceTree = "<group>"; };
 		715729872063CB21008354DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		715729892063CC53008354DC /* LunchTrain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LunchTrain.entitlements; sourceTree = "<group>"; };
+		71B12F2520CA8B8D00CE559D /* TrainListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListViewModel.swift; sourceTree = "<group>"; };
+		71B12F2720CA8B9600CE559D /* TrainListViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListViewData.swift; sourceTree = "<group>"; };
+		71B12F2920CA948000CE559D /* Train.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		71B12F2C20CA9B2300CE559D /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		71B12F2E20CA9BE900CE559D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		90CA036A064572006CF1EB89 /* Pods_LunchTrainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchTrainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B600682AAF307F669CE71A48 /* Pods-LunchTrainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTrainTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTrainTests/Pods-LunchTrainTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,18 +123,22 @@
 		710283432062B63D000EF70E /* LunchTrain */ = {
 			isa = PBXGroup;
 			children = (
+				71B12F2B20CA9B1400CE559D /* Common */,
+				71B12F2420CA8B6600CE559D /* NewTrain */,
+				71B12F2320CA8B5E00CE559D /* TrainDetail */,
 				715729892063CC53008354DC /* LunchTrain.entitlements */,
 				715729872063CB21008354DC /* GoogleService-Info.plist */,
 				71065BD52062BB36008FFF55 /* TrainList */,
 				710283442062B63D000EF70E /* AppDelegate.swift */,
-				710283462062B63E000EF70E /* ViewController.swift */,
+				710283462062B63E000EF70E /* BaseViewController.swift */,
 				710283482062B63E000EF70E /* Main.storyboard */,
 				7102834B2062B63E000EF70E /* Assets.xcassets */,
 				7102834D2062B63E000EF70E /* LaunchScreen.storyboard */,
 				710283502062B63E000EF70E /* Info.plist */,
 				71065BD62062BCDD008FFF55 /* TrainCreatorViewController.swift */,
+				71B12F2920CA948000CE559D /* Train.swift */,
 				71065BD82062BD02008FFF55 /* NetworkService.swift */,
-				71065BDA2062BE3C008FFF55 /* Train.swift */,
+				71B12F2E20CA9BE900CE559D /* main.swift */,
 			);
 			path = LunchTrain;
 			sourceTree = "<group>";
@@ -143,11 +155,35 @@
 		71065BD52062BB36008FFF55 /* TrainList */ = {
 			isa = PBXGroup;
 			children = (
-				715729792062D88A008354DC /* TrainDetailViewController.swift */,
 				71065BDE2062C177008FFF55 /* TrainListViewController.swift */,
-				7157297B2062F130008354DC /* NewTrainViewController.swift */,
+				71B12F2520CA8B8D00CE559D /* TrainListViewModel.swift */,
+				71B12F2720CA8B9600CE559D /* TrainListViewData.swift */,
 			);
 			path = TrainList;
+			sourceTree = "<group>";
+		};
+		71B12F2320CA8B5E00CE559D /* TrainDetail */ = {
+			isa = PBXGroup;
+			children = (
+				715729792062D88A008354DC /* TrainDetailViewController.swift */,
+			);
+			path = TrainDetail;
+			sourceTree = "<group>";
+		};
+		71B12F2420CA8B6600CE559D /* NewTrain */ = {
+			isa = PBXGroup;
+			children = (
+				7157297B2062F130008354DC /* NewTrainViewController.swift */,
+			);
+			path = NewTrain;
+			sourceTree = "<group>";
+		};
+		71B12F2B20CA9B1400CE559D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				71B12F2C20CA9B2300CE559D /* ViewController+Ext.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		EAE4CF2632FA1BBD14054599 /* Frameworks */ = {
@@ -405,13 +441,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				710283472062B63E000EF70E /* ViewController.swift in Sources */,
+				710283472062B63E000EF70E /* BaseViewController.swift in Sources */,
 				71065BD72062BCDD008FFF55 /* TrainCreatorViewController.swift in Sources */,
+				71B12F2F20CA9BE900CE559D /* main.swift in Sources */,
 				71065BD92062BD02008FFF55 /* NetworkService.swift in Sources */,
-				71065BDB2062BE3C008FFF55 /* Train.swift in Sources */,
 				7157297A2062D88A008354DC /* TrainDetailViewController.swift in Sources */,
+				71B12F2D20CA9B2300CE559D /* ViewController+Ext.swift in Sources */,
 				710283452062B63D000EF70E /* AppDelegate.swift in Sources */,
 				7157297C2062F130008354DC /* NewTrainViewController.swift in Sources */,
+				71B12F2820CA8B9600CE559D /* TrainListViewData.swift in Sources */,
+				71B12F2620CA8B8D00CE559D /* TrainListViewModel.swift in Sources */,
+				71B12F2A20CA948000CE559D /* Train.swift in Sources */,
 				71065BDF2062C177008FFF55 /* TrainListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
