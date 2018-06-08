@@ -19,6 +19,8 @@ class NewTrainViewController: UIViewController {
     @IBOutlet weak var placeField: UITextField!
     @IBOutlet weak var titleField: UITextField!
 
+    private var viewModel = NewTrainViewModel()
+
     static func fromStoryboard(_ storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)) -> NewTrainViewController {
         let controller = storyboard.instantiateViewController(withIdentifier: "NewTrainViewController") as! NewTrainViewController
         return controller
@@ -31,6 +33,12 @@ class NewTrainViewController: UIViewController {
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.addPressed))
         createTrainButton.addGestureRecognizer(gesture)
 
+        viewModel.newTrainRequestCompleted = { [weak self] success in
+            guard let strongSelf = self else { return }
+            strongSelf.activityIndicator.stopAnimating()
+            strongSelf.activityIndicator.isHidden = true
+            strongSelf.dismiss(animated: true, completion: nil)
+        }
     }
 
     @objc func addPressed() {
@@ -39,27 +47,6 @@ class NewTrainViewController: UIViewController {
         activityIndicator.isHidden = false
         activityIndicator.startAnimating()
 
-        let user = Auth.auth().currentUser
-
-        guard let place = placeField.text, let title = titleField.text else { return }
-
-        let newTrain = Train(owner: user?.displayName ?? "", place: place, time: datePicker.date, title: title)
-
-        let firestore = Firestore.firestore()
-
-        let trainCollection = firestore.collection("trains")
-        let newTrainReference = trainCollection.document()
-
-        firestore.runTransaction({ (transaction, errorPointer) -> Any? in
-            transaction.setData(newTrain.dictionary, forDocument: newTrainReference)
-            return nil
-        }) { (object, error) in
-            if let error = error {
-                print(error)
-            }
-            self.activityIndicator.stopAnimating()
-            self.activityIndicator.isHidden = true
-            self.dismiss(animated: true, completion: nil)
-        }
+        viewModel.saveNewTrain(name: titleField.text ?? "", time: datePicker.date, place: placeField.text ?? "")
     }
 }

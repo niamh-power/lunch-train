@@ -24,6 +24,8 @@
 		71B12F2A20CA948000CE559D /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F2920CA948000CE559D /* Train.swift */; };
 		71B12F2D20CA9B2300CE559D /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F2C20CA9B2300CE559D /* ViewController+Ext.swift */; };
 		71B12F2F20CA9BE900CE559D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F2E20CA9BE900CE559D /* main.swift */; };
+		71B12F3120CAB66F00CE559D /* TableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F3020CAB66F00CE559D /* TableViewAdapter.swift */; };
+		71B12F3320CAD19000CE559D /* NewTrainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F3220CAD19000CE559D /* NewTrainViewModel.swift */; };
 		7DEC7B725B0000916B18AEDF /* Pods_LunchTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A28F6FA3E04E8A1DB42762 /* Pods_LunchTrain.framework */; };
 		9092A2C7BB89F33679DEC705 /* Pods_LunchTrainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CA036A064572006CF1EB89 /* Pods_LunchTrainTests.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +67,8 @@
 		71B12F2920CA948000CE559D /* Train.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
 		71B12F2C20CA9B2300CE559D /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
 		71B12F2E20CA9BE900CE559D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		71B12F3020CAB66F00CE559D /* TableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAdapter.swift; sourceTree = "<group>"; };
+		71B12F3220CAD19000CE559D /* NewTrainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrainViewModel.swift; sourceTree = "<group>"; };
 		90CA036A064572006CF1EB89 /* Pods_LunchTrainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchTrainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B600682AAF307F669CE71A48 /* Pods-LunchTrainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTrainTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTrainTests/Pods-LunchTrainTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				7157297B2062F130008354DC /* NewTrainViewController.swift */,
+				71B12F3220CAD19000CE559D /* NewTrainViewModel.swift */,
 			);
 			path = NewTrain;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				71B12F2C20CA9B2300CE559D /* ViewController+Ext.swift */,
+				71B12F3020CAB66F00CE559D /* TableViewAdapter.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -442,8 +448,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				710283472062B63E000EF70E /* BaseViewController.swift in Sources */,
+				71B12F3120CAB66F00CE559D /* TableViewAdapter.swift in Sources */,
 				71065BD72062BCDD008FFF55 /* TrainCreatorViewController.swift in Sources */,
 				71B12F2F20CA9BE900CE559D /* main.swift in Sources */,
+				71B12F3320CAD19000CE559D /* NewTrainViewModel.swift in Sources */,
 				71065BD92062BD02008FFF55 /* NetworkService.swift in Sources */,
 				7157297A2062D88A008354DC /* TrainDetailViewController.swift in Sources */,
 				71B12F2D20CA9B2300CE559D /* ViewController+Ext.swift in Sources */,

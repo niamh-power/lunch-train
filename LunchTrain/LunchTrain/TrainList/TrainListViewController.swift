@@ -10,25 +10,43 @@ import UIKit
 import FirebaseFirestore
 import SnapKit
 
-class TrainListViewController: ViewController<TrainListViewModel>, UITableViewDataSource, UITableViewDelegate {
+class TrainListViewController: ViewController<TrainListViewModel> {
 
     @IBOutlet weak var tableView: UITableView!
     private var selectedTrain: Train?
     @IBOutlet weak var createTrainButton: UIView!
-
-    private var listener: ListenerRegistration?
+    private let tableViewAdapter = TableViewAdapter<Train>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         viewModel.didChangeData = { [weak self] data in
             guard let strongSelf = self else { return }
+            strongSelf.tableViewAdapter.update(with: data.trains)
             strongSelf.tableView.reloadData()
         }
 
-        tableView.dataSource = self
-        tableView.delegate = self
+        tableView.dataSource = tableViewAdapter
+        tableView.delegate = tableViewAdapter
         tableView.estimatedRowHeight = 200
+
+        tableViewAdapter.cellFactory = { (tableView, indexPath, cellData) in
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? TrainTableViewCell else { return UITableViewCell() }
+            cell.populate(train: cellData)
+            return cell
+        }
+
+        tableViewAdapter.didSelectItem = { [weak self] rowData, indexPath in
+            guard let strongSelf = self else { return }
+            strongSelf.tableView.deselectRow(at: indexPath, animated: true)
+            strongSelf.selectedTrain = rowData
+
+            let vc = TrainDetailViewController.fromStoryboard()
+            vc.train = strongSelf.selectedTrain
+            vc.trainReference = strongSelf.viewModel.documents[indexPath.row].reference
+
+            strongSelf.navigationController?.pushViewController(vc, animated: true)
+        }
 
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.addPressed))
         createTrainButton.addGestureRecognizer(gesture)
@@ -50,35 +68,8 @@ class TrainListViewController: ViewController<TrainListViewModel>, UITableViewDa
     }
 
     deinit {
-        listener?.remove()
+        viewModel.stopObserving()
     }
-
-    // MARK: - UITableViewDataSource
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TrainTableViewCell
-        let train = viewModel.viewData.trains[indexPath.row]
-        cell.populate(train: train)
-        return cell
-    }
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.viewData.trains.count
-    }
-
-    // MARK: - UITableViewDelegate
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        self.selectedTrain = viewModel.viewData.trains[indexPath.row]
-
-        let vc = TrainDetailViewController.fromStoryboard()
-        vc.train = selectedTrain
-        vc.trainReference = viewModel.documents[indexPath.row].reference
-
-        navigationController?.pushViewController(vc, animated: true)
-    }
-
 }
 
 class TrainTableViewCell: UITableViewCell {
