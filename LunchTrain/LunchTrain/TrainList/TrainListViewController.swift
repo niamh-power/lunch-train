@@ -14,6 +14,8 @@ class TrainListViewController: ViewController<TrainListViewModel> {
 
     @IBOutlet weak var tableView: UITableView!
     private var selectedTrain: Train?
+    private var selectedTrainReference: DocumentReference?
+
     @IBOutlet weak var createTrainButton: UIView!
     private let tableViewAdapter = TableViewAdapter<Train>()
 
@@ -40,12 +42,7 @@ class TrainListViewController: ViewController<TrainListViewModel> {
             guard let strongSelf = self else { return }
             strongSelf.tableView.deselectRow(at: indexPath, animated: true)
             strongSelf.selectedTrain = rowData
-
-            let vc = TrainDetailViewController.fromStoryboard()
-            vc.train = strongSelf.selectedTrain
-            vc.trainReference = strongSelf.viewModel.documents[indexPath.row].reference
-
-            strongSelf.navigationController?.pushViewController(vc, animated: true)
+            strongSelf.selectedTrainReference = strongSelf.viewModel.documents[indexPath.row].reference
         }
 
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.addPressed))
@@ -58,6 +55,13 @@ class TrainListViewController: ViewController<TrainListViewModel> {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
+
+        if segue.identifier == "showDetail" {
+            let detailViewModel = TrainDetailViewModel(viewData: TrainDetailViewData(train: selectedTrain!, trainReference: selectedTrainReference!))
+            let vc = segue.destination as? TrainDetailViewController
+            vc?.viewModel = detailViewModel
+            return
+        }
 
         guard
             let viewController = segue.destination as? NewTrainViewController
