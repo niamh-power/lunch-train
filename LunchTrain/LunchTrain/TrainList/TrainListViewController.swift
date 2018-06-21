@@ -31,6 +31,7 @@ class TrainListViewController: ViewController<TrainListViewModel> {
         tableView.dataSource = tableViewAdapter
         tableView.delegate = tableViewAdapter
         tableView.estimatedRowHeight = 200
+        
 
         tableViewAdapter.cellFactory = { (tableView, indexPath, cellData) in
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? TrainTableViewCell else { return UITableViewCell() }
@@ -43,10 +44,15 @@ class TrainListViewController: ViewController<TrainListViewModel> {
             strongSelf.tableView.deselectRow(at: indexPath, animated: true)
             strongSelf.selectedTrain = rowData
             strongSelf.selectedTrainReference = strongSelf.viewModel.documents[indexPath.row].reference
+            strongSelf.detailPressed()
         }
 
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.addPressed))
         createTrainButton.addGestureRecognizer(gesture)
+    }
+
+    func detailPressed() {
+        performSegue(withIdentifier: "showDetail", sender: self)
     }
 
     @objc func addPressed(sender:UITapGestureRecognizer){
@@ -57,7 +63,7 @@ class TrainListViewController: ViewController<TrainListViewModel> {
         super.prepare(for: segue, sender: sender)
 
         if segue.identifier == "showDetail" {
-            let detailViewModel = TrainDetailViewModel(viewData: TrainDetailViewData(train: selectedTrain!, trainReference: selectedTrainReference!))
+            let detailViewModel = TrainDetailViewModel(viewData: TrainDetailViewData(train: selectedTrain!, trainReference: selectedTrainReference!, passengers: [], isUserAPassenger: false))
             let vc = segue.destination as? TrainDetailViewController
             vc?.viewModel = detailViewModel
             return

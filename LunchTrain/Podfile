@@ -13,6 +13,7 @@ target 'LunchTrain' do
   pod 'Firebase/Firestore'
   pod 'SnapKit'
   pod 'Firebase/Messaging'
+  pod 'MaterialComponents'
 
   target 'LunchTrainTests' do
     inherit! :search_paths

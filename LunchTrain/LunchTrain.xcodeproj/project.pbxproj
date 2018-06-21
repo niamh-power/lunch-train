@@ -28,6 +28,7 @@
 		71B12F3320CAD19000CE559D /* NewTrainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F3220CAD19000CE559D /* NewTrainViewModel.swift */; };
 		71B12F3520CC0AD700CE559D /* TrainDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F3420CC0AD700CE559D /* TrainDetailViewModel.swift */; };
 		71B12F3720CC0AE200CE559D /* TrainDetailViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F3620CC0AE200CE559D /* TrainDetailViewData.swift */; };
+		71DC82D120DBAD4000E264DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DC82D020DBAD4000E264DD /* User.swift */; };
 		7DEC7B725B0000916B18AEDF /* Pods_LunchTrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A28F6FA3E04E8A1DB42762 /* Pods_LunchTrain.framework */; };
 		9092A2C7BB89F33679DEC705 /* Pods_LunchTrainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CA036A064572006CF1EB89 /* Pods_LunchTrainTests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		71B12F3220CAD19000CE559D /* NewTrainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrainViewModel.swift; sourceTree = "<group>"; };
 		71B12F3420CC0AD700CE559D /* TrainDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailViewModel.swift; sourceTree = "<group>"; };
 		71B12F3620CC0AE200CE559D /* TrainDetailViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDetailViewData.swift; sourceTree = "<group>"; };
+		71DC82D020DBAD4000E264DD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		90CA036A064572006CF1EB89 /* Pods_LunchTrainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchTrainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B600682AAF307F669CE71A48 /* Pods-LunchTrainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTrainTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTrainTests/Pods-LunchTrainTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,6 +178,7 @@
 				715729792062D88A008354DC /* TrainDetailViewController.swift */,
 				71B12F3420CC0AD700CE559D /* TrainDetailViewModel.swift */,
 				71B12F3620CC0AE200CE559D /* TrainDetailViewData.swift */,
+				71DC82D020DBAD4000E264DD /* User.swift */,
 			);
 			path = TrainDetail;
 			sourceTree = "<group>";
@@ -238,8 +241,6 @@
 				710283512062B63E000EF70E /* Sources */,
 				710283522062B63E000EF70E /* Frameworks */,
 				710283532062B63E000EF70E /* Resources */,
-				76C85BBB8AFA023F065C5906 /* [CP] Embed Pods Frameworks */,
-				14FEA5DFE29514FC7FC1FF60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,6 +330,12 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
@@ -344,6 +351,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
@@ -356,21 +369,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchTrain/Pods-LunchTrain-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		14FEA5DFE29514FC7FC1FF60 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchTrainTests/Pods-LunchTrainTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2B46EC712213BFCB53031FFD /* [CP] Copy Pods Resources */ = {
@@ -393,21 +391,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchTrain/Pods-LunchTrain-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		76C85BBB8AFA023F065C5906 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchTrainTests/Pods-LunchTrainTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		86179421DDD8147AF3DBEB77 /* [CP] Check Pods Manifest.lock */ = {
@@ -460,6 +443,7 @@
 				71B12F3320CAD19000CE559D /* NewTrainViewModel.swift in Sources */,
 				71B12F3520CC0AD700CE559D /* TrainDetailViewModel.swift in Sources */,
 				71065BD92062BD02008FFF55 /* NetworkService.swift in Sources */,
+				71DC82D120DBAD4000E264DD /* User.swift in Sources */,
 				7157297A2062D88A008354DC /* TrainDetailViewController.swift in Sources */,
 				71B12F2D20CA9B2300CE559D /* ViewController+Ext.swift in Sources */,
 				710283452062B63D000EF70E /* AppDelegate.swift in Sources */,

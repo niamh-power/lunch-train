@@ -12,4 +12,6 @@ import FirebaseFirestore
 struct TrainDetailViewData {
     var train: Train
     var trainReference: DocumentReference
+    var passengers: [User]
+    var isUserAPassenger: Bool = false
 }

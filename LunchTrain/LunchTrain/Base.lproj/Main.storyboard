@@ -203,6 +203,14 @@
                                         <color key="textColor" red="0.99482670200000001" green="1" blue="0.99780765339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="IP4-at-eEm">
+                                        <rect key="frame" x="160" y="0.0" width="54" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="54" id="Wzc-z6-Y8c"/>
+                                            <constraint firstAttribute="height" constant="54" id="iQJ-EH-vGd"/>
+                                        </constraints>
+                                        <color key="color" red="0.99482670200000001" green="1" blue="0.99780765339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1764705926" green="0.49803921579999999" blue="0.75686275960000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -211,6 +219,8 @@
                                     <constraint firstAttribute="height" constant="54" id="SP1-o7-SIq"/>
                                     <constraint firstAttribute="trailing" secondItem="GlO-9y-NtX" secondAttribute="trailing" id="VPV-hF-bqJ"/>
                                     <constraint firstAttribute="bottom" secondItem="GlO-9y-NtX" secondAttribute="bottom" id="XUW-jD-Wcw"/>
+                                    <constraint firstItem="IP4-at-eEm" firstAttribute="centerX" secondItem="kqg-3g-6yV" secondAttribute="centerX" id="dA3-sC-lcG"/>
+                                    <constraint firstItem="IP4-at-eEm" firstAttribute="centerY" secondItem="kqg-3g-6yV" secondAttribute="centerY" id="wW7-mZ-HmB"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -236,7 +246,9 @@
                         <viewLayoutGuide key="safeArea" id="J7J-iO-s5K"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="IP4-at-eEm" id="bDU-iZ-Odh"/>
                         <outlet property="joinTrainButtonView" destination="kqg-3g-6yV" id="35O-DN-RQp"/>
+                        <outlet property="joinTrainLabel" destination="GlO-9y-NtX" id="l1i-EV-1Vd"/>
                         <outlet property="organiserLabel" destination="lk2-vx-HjC" id="YLk-lX-Jrn"/>
                         <outlet property="passengersTableView" destination="A90-ja-ZI4" id="UuJ-7l-d2i"/>
                         <outlet property="titleLabel" destination="HwL-cr-dBf" id="yo5-rA-6Se"/>
