@@ -223,6 +223,7 @@
 				7102833F2062B63D000EF70E /* Resources */,
 				0E7B2E9D5DB709034249786D /* [CP] Embed Pods Frameworks */,
 				2B46EC712213BFCB53031FFD /* [CP] Copy Pods Resources */,
+				71B2771F210F133D001C0AE4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -392,6 +393,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchTrain/Pods-LunchTrain-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		71B2771F210F133D001C0AE4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 63b227e3d14aab96592ff790d56f532a3a55453c 3cb961e2d87db2ad2be124789dfb85e16fc32ce060057fb85b56227fe9ee920b";
 		};
 		86179421DDD8147AF3DBEB77 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

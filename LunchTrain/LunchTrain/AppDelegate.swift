@@ -11,6 +11,8 @@ import Firebase
 import FirebaseAuthUI
 import FirebaseMessaging
 import UserNotifications
+import Fabric
+import Crashlytics
 
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
 
@@ -25,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Register for remote notifications. This shows a permission dialog on first run, to
         // show the dialog at a more appropriate time move this registration accordingly.
         // [START register_for_notifications]
+        Fabric.with([Crashlytics.self])
 
         if #available(iOS 10.0, *) {
 
