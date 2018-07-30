@@ -87,8 +87,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         return false
     }
 
+    func applicationReceivedRemoteMessage(_ remoteMessage: MessagingRemoteMessage) {
+        print(remoteMessage.appData)
+    }
+
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
         let token = Messaging.messaging().fcmToken
+        Messaging.messaging().subscribe(toTopic: "newTrains")
         print("FCM token: \(token ?? "")")
     }
 }

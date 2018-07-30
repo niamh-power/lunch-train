@@ -41,5 +41,31 @@ exports.makeUppercase = functions.database.ref('/messages/{pushId}/original')
 
 exports.newTrain = functions.firestore.document('trains/{title}').onCreate((snap, context) => {
     const newValue = snap.data;
-    const name = newValue.name.toString();
+    //const name = newValue.name.toString();
+
+        // Notification details.
+    const payload = {
+        notification: {
+            title: 'A new train has been created!',
+            body: `${newValue.owner} just created a new train to "${newTrain.location}".`,
+            icon: 'photoURL',
+            sound: 'default',
+            clickAction: 'fcm.ACTION.HELLO',
+        }
+    };
+   
+    // Set the message as high priority and have it expire after 24 hours.
+    const options = {
+        collapseKey: 'demo',
+        contentAvailable: true,
+      };
+
+      // Send a message to devices subscribed to the provided topic.
+    const topic = `trains`;
+
+    return admin.messaging().sendToTopic(topic, payload, options)
+      .then((response) => {
+        console.log('Successfully sent message:', response);
+        return response.messageId
+    });
 });
