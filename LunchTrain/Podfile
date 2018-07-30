@@ -11,6 +11,7 @@ target 'LunchTrain' do
   pod 'FirebaseUI/Auth'
   pod 'FirebaseUI/Google'
   pod 'Firebase/Firestore'
+  pod 'FirebaseSwizzlingUtilities', '1.0.0'
   pod 'SnapKit'
   pod 'Firebase/Messaging'
   pod 'MaterialComponents'

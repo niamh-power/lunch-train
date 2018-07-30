@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import FirebaseAuthUI
+import FirebaseUI
 import FirebaseMessaging
 import UserNotifications
 import Fabric

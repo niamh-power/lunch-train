@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import FirebaseAuthUI
-import FirebaseGoogleAuthUI
+import FirebaseUI
 
 class BaseViewController: UIViewController, FUIAuthDelegate {
 
