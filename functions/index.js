@@ -39,3 +39,7 @@ exports.makeUppercase = functions.database.ref('/messages/{pushId}/original')
       return snapshot.ref.parent.child('uppercase').set(uppercase);
     });
 
+exports.newTrain = functions.firestore.document('trains/{title}').onCreate((snap, context) => {
+    const newValue = snap.data;
+    const name = newValue.name.toString();
+});
