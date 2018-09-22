@@ -28,8 +28,11 @@ class BaseViewController: UIViewController, FUIAuthDelegate {
             self.present(authViewController, animated: true, completion: nil)
         }
     }
-
-    func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
+    
+    func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
+        let deviceToken = UserDefaults.standard.string(forKey: Keys.deviceToken.rawValue)
+        // check that the user doesn't already exist!
+        TrainService().saveNewUser(deviceToken: deviceToken, callback: nil)
         showList()
     }
 

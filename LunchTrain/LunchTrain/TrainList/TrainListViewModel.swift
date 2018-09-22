@@ -8,9 +8,9 @@
 
 import Foundation
 import FirebaseFirestore
+import CodableFirebase
 
 class TrainListViewModel {
-    var localCollection: LocalCollection<Train>!
     var trainsReference: DocumentReference?
 
     fileprivate var query: Query? {
@@ -49,9 +49,10 @@ class TrainListViewModel {
             }
 
             let models = snapshot.documents.compactMap { (document) -> Train? in
-                if let model = Train(dictionary: document.data()) {
+                do {
+                    let model = try FirestoreDecoder().decode(Train.self, from: document.data())
                     return model
-                } else {
+                } catch {
                     print("error parsing document: \(document.data())")
                     return nil
                 }

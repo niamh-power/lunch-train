@@ -12,14 +12,16 @@ import CodableFirebase
 import FirebaseAuth
 
 struct User: Codable {
+    var userId: String?
     var userName: String
-    var deviceToken: String
+    var deviceToken: String? = ""
 }
 
 class TrainService {
-    func saveNewUser(deviceToken: String, callback: @escaping ((_ success: Bool) -> Void)) {
+    func saveNewUser(deviceToken: String?, callback: ((_ success: Bool) -> Void)?) {
         let userName = getCurrentUserName()
-        let newUser = try! FirestoreEncoder().encode(User(userName: userName, deviceToken: deviceToken))
+        let userId = Auth.auth().currentUser?.uid
+        let newUser = try! FirestoreEncoder().encode(User(userId: userId, userName: userName, deviceToken: deviceToken))
         
         let firestore = Firestore.firestore()
         let userCollection = firestore.collection("users")
@@ -28,19 +30,18 @@ class TrainService {
         
         firestore.runTransaction( { (transaction, errorPointer) -> Any in
             transaction.setData(newUser, forDocument: newUserReference)
-        }) { [weak self] (object, error) in
-            if let error = error {
-                callback(false)
+        }) { (object, error) in
+            if error != nil {
+                callback?(false)
                 return
             }
             
-            callback(true)
+            callback?(true)
         }
     }
     
-    func saveNewTrain(name: String, time: Date, place: String) {
-        let userName = getCurrentUserName()
-        let newTrain = Train(owner: userName, place: place, time: time, title: name)
+    func saveNewTrain(name: String, time: Date, place: String, callback: @escaping ((_ success: Bool) -> Void)) {
+        let newTrain = try! FirestoreEncoder().encode(Train(ownerId: (Auth.auth().currentUser?.uid)!, place: place, time: time, title: name))
         
         let firestore = Firestore.firestore()
         let trainCollection = firestore.collection("trains")
@@ -48,16 +49,15 @@ class TrainService {
         let newTrainReference = trainCollection.document()
         
         firestore.runTransaction( { (transaction, errorPointer) -> Any in
-            transaction.setData(newTrain.dictionary, forDocument: newTrainReference)
-        }) { [weak self] (object, error) in
-            guard let strongSelf = self else { return }
+            transaction.setData(newTrain, forDocument: newTrainReference)
+        }) { (object, error) in
             if let error = error {
                 print(error)
-                //strongSelf.newTrainRequestCompleted?(false)
+                callback(false)
                 return
             }
             
-            //strongSelf.newTrainRequestCompleted?(true)
+            callback(true)
         }
     }
     

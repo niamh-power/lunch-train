@@ -45,7 +45,8 @@ class TrainDetailViewController: ViewController<TrainDetailViewModel> {
             }
 
             let train = data.train
-            strongSelf.organiserLabel.text = "Organiser: \(train.owner)"
+            // TODO: get the user from a user id
+            strongSelf.organiserLabel.text = "Organiser: \(train.ownerId)"
             strongSelf.titleLabel.text = train.title
             strongSelf.tableViewAdapter.update(with: data.passengers)
             strongSelf.passengersTableView.reloadData()

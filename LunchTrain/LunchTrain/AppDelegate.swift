@@ -14,6 +14,10 @@ import UserNotifications
 import Fabric
 import Crashlytics
 
+enum Keys : String {
+    case deviceToken = "device_token"
+}
+
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
 
     var window: UIWindow?
@@ -91,9 +95,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         print(remoteMessage.appData)
     }
     
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {        
         if let refreshedToken = InstanceID.instanceID().token() {
-            print("InstanceID token: \(refreshedToken)")
+            let defaults = UserDefaults.standard
+            defaults.set(refreshedToken, forKey: Keys.deviceToken.rawValue)
         }
     }
 

@@ -65,7 +65,7 @@ class TrainDetailViewModel {
             }
 
             self.viewData.passengers = models
-            self.checkIfUserIsAPassenger()
+            self.canTheUserJoinTheTrain()
             self.documents = snapshot.documents
         }
     }
@@ -84,7 +84,7 @@ class TrainDetailViewModel {
         let user = Auth.auth().currentUser
         let name = user?.displayName ?? ""
 
-        let passenger = try! FirestoreEncoder().encode(User(userName: name, deviceToken: ""))
+        let passenger = try! FirestoreEncoder().encode(User(userId: user?.uid, userName: (user?.displayName)!, deviceToken: nil))
 
         let newPassengerReference = query.document()
 
@@ -103,11 +103,12 @@ class TrainDetailViewModel {
     }
     
     // TODO: can improve this
-    private func checkIfUserIsAPassenger() {
-        let userName = getCurrentUserName()
+    private func canTheUserJoinTheTrain() {
+        let userId = Auth.auth().currentUser?.uid
+        let ownerId = viewData.train.ownerId
         
         let users = viewData.passengers.filter({ passenger in
-            return passenger.userName == userName
+            return passenger.userId == userId || passenger.userId == ownerId
         })
         
         viewData.isUserAPassenger = users.count == 1

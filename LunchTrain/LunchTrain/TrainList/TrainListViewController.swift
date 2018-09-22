@@ -99,7 +99,7 @@ class TrainTableViewCell: UITableViewCell {
     @IBOutlet weak var trainTitleLabel: UILabel!
 
     func populate(train: Train) {
-        organiserLabel.text = train.owner
+        organiserLabel.text = train.ownerId
         trainTitleLabel.text = train.title
 
         let dateFormatter = DateFormatter()
