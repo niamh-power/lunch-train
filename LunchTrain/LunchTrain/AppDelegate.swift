@@ -90,6 +90,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func applicationReceivedRemoteMessage(_ remoteMessage: MessagingRemoteMessage) {
         print(remoteMessage.appData)
     }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        if let refreshedToken = InstanceID.instanceID().token() {
+            print("InstanceID token: \(refreshedToken)")
+        }
+    }
 
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
         let token = Messaging.messaging().fcmToken

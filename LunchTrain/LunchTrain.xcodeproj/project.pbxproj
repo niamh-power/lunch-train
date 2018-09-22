@@ -19,6 +19,7 @@
 		7157297A2062D88A008354DC /* TrainDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715729792062D88A008354DC /* TrainDetailViewController.swift */; };
 		7157297C2062F130008354DC /* NewTrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7157297B2062F130008354DC /* NewTrainViewController.swift */; };
 		715729882063CB22008354DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 715729872063CB21008354DC /* GoogleService-Info.plist */; };
+		71740F652156407A006FA940 /* TrainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71740F642156407A006FA940 /* TrainService.swift */; };
 		71B12F2620CA8B8D00CE559D /* TrainListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F2520CA8B8D00CE559D /* TrainListViewModel.swift */; };
 		71B12F2820CA8B9600CE559D /* TrainListViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F2720CA8B9600CE559D /* TrainListViewData.swift */; };
 		71B12F2A20CA948000CE559D /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B12F2920CA948000CE559D /* Train.swift */; };
@@ -65,6 +66,7 @@
 		7157297B2062F130008354DC /* NewTrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTrainViewController.swift; sourceTree = "<group>"; };
 		715729872063CB21008354DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		715729892063CC53008354DC /* LunchTrain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LunchTrain.entitlements; sourceTree = "<group>"; };
+		71740F642156407A006FA940 /* TrainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainService.swift; sourceTree = "<group>"; };
 		71B12F2520CA8B8D00CE559D /* TrainListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListViewModel.swift; sourceTree = "<group>"; };
 		71B12F2720CA8B9600CE559D /* TrainListViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListViewData.swift; sourceTree = "<group>"; };
 		71B12F2920CA948000CE559D /* Train.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 			children = (
 				71B12F2C20CA9B2300CE559D /* ViewController+Ext.swift */,
 				71B12F3020CAB66F00CE559D /* TableViewAdapter.swift */,
+				71740F642156407A006FA940 /* TrainService.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -326,8 +329,9 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LunchTrain/Pods-LunchTrain-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LunchTrain/Pods-LunchTrain-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -349,6 +353,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -369,7 +374,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchTrain/Pods-LunchTrain-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LunchTrain/Pods-LunchTrain-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2B46EC712213BFCB53031FFD /* [CP] Copy Pods Resources */ = {
@@ -378,7 +383,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LunchTrain/Pods-LunchTrain-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LunchTrain/Pods-LunchTrain-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
@@ -391,7 +396,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchTrain/Pods-LunchTrain-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LunchTrain/Pods-LunchTrain-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		71B2771F210F133D001C0AE4 /* ShellScript */ = {
@@ -466,6 +471,7 @@
 				71B12F2820CA8B9600CE559D /* TrainListViewData.swift in Sources */,
 				71B12F2620CA8B8D00CE559D /* TrainListViewModel.swift in Sources */,
 				71B12F2A20CA948000CE559D /* Train.swift in Sources */,
+				71740F652156407A006FA940 /* TrainService.swift in Sources */,
 				71065BDF2062C177008FFF55 /* TrainListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

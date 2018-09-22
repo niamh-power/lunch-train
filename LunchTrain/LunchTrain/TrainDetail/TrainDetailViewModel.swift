@@ -9,11 +9,11 @@
 import Foundation
 import FirebaseFirestore
 import FirebaseAuth
+import CodableFirebase
 
 class TrainDetailViewModel {
     var didChangeData: ((TrainDetailViewData) -> Void)?
     var trainReference: DocumentReference?
-    var localCollection: LocalCollection<User>!
     var joinTrainRequestCompleted: ((_ success: Bool) -> Void)?
 
     fileprivate var query: CollectionReference? {
@@ -55,9 +55,10 @@ class TrainDetailViewModel {
             }
 
             let models = snapshot.documents.compactMap { (document) -> User? in
-                if let model = User(dictionary: document.data()) {
+                do {
+                    let model = try FirestoreDecoder().decode(User.self, from: document.data())
                     return model
-                } else {
+                } catch {
                     print("error parsing document: \(document.data())")
                     return nil
                 }
@@ -83,12 +84,12 @@ class TrainDetailViewModel {
         let user = Auth.auth().currentUser
         let name = user?.displayName ?? ""
 
-        let passenger = User(name: name)
+        let passenger = try! FirestoreEncoder().encode(User(userName: name, deviceToken: ""))
 
         let newPassengerReference = query.document()
 
         Firestore.firestore().runTransaction( { (transaction, errorPointer) -> Any in
-            transaction.setData(passenger.dictionary, forDocument: newPassengerReference)
+            transaction.setData(passenger, forDocument: newPassengerReference)
         }) { [weak self] (object, error) in
             guard let strongSelf = self else { return }
             if let error = error {
@@ -100,9 +101,16 @@ class TrainDetailViewModel {
             strongSelf.joinTrainRequestCompleted?(true)
         }
     }
-
+    
+    // TODO: can improve this
     private func checkIfUserIsAPassenger() {
-        viewData.isUserAPassenger = viewData.passengers.contains(User(name: getCurrentUserName()))
+        let userName = getCurrentUserName()
+        
+        let users = viewData.passengers.filter({ passenger in
+            return passenger.userName == userName
+        })
+        
+        viewData.isUserAPassenger = users.count == 1
     }
 
     private func getCurrentUserName() -> String {

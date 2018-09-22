@@ -17,6 +17,7 @@ target 'LunchTrain' do
   pod 'MaterialComponents'
   pod 'Crashlytics'
   pod 'Fabric'
+  pod 'CodableFirebase'
 
   target 'LunchTrainTests' do
     inherit! :search_paths

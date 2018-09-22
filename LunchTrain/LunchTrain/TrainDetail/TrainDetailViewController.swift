@@ -57,7 +57,7 @@ class TrainDetailViewController: ViewController<TrainDetailViewModel> {
 
         tableViewAdapter.cellFactory = { (tableView, indexPath, cellData) in
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else { return UITableViewCell() }
-            cell.textLabel?.text = cellData.name
+            cell.textLabel?.text = cellData.userName
             return cell
         }
 
