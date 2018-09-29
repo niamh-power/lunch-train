@@ -39,6 +39,29 @@ exports.makeUppercase = functions.database.ref('/messages/{pushId}/original')
       return snapshot.ref.parent.child('uppercase').set(uppercase);
     });
 
+exports.newPassenger = functions.firestore.document('trains/passengers/{userId}').onCreate((snap, context) => {
+    const newValue = snap.data
+
+    const payload = {
+        notification: {
+            title: `${newValue.userName} just joined your train!`,
+            body: ``,
+            icon: `photoUrl`,
+            sound: `default`,
+            clickAction: `fcm.ACTION.HELLO`,
+        }
+    };
+
+    const options = {
+        collapseKey: 'demo',
+        contentAvailable: true,
+    };
+
+    var tokenForOwner = newValue.parent.ownerId;
+
+    print(tokenForOwner);
+});   
+
 exports.newTrain = functions.firestore.document('trains/{title}').onCreate((snap, context) => {
     const newValue = snap.data;
     //const name = newValue.name.toString();
