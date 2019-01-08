@@ -67,3 +67,4 @@ fastlane/screenshots
 .DS_Store
 
 LunchTrain/LunchTrain/GoogleService-Info.plist
+LunchTrain/LunchTrain/Info.plist
